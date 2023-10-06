@@ -1,0 +1,113 @@
+ERRORS:
+
+
+
+Collisions group names:
+
+	group #0: Collision_Ground_Gripper1   has 1 collision pairs and 2 bodies
+	group #1: Collision_Ground_Gripper2   has 1 collision pairs and 2 bodies
+	group #2: Collision_Gripper1_Gripper2   has 1 collision pairs and 2 bodies
+	group #3: Collision_Ground_Cube   has 1 collision pairs and 2 bodies
+	group #4: Collision_Grippe1_Cube   has 1 collision pairs and 2 bodies
+	group #5: Collision_Gripper2_Cube   has 1 collision pairs and 2 bodies
+	group #6: Collision_XLink_Ground   has 1 collision pairs and 2 bodies
+	group #7: Collision_Cube_LiftBoom   has 1 collision pairs and 2 bodies
+A total of 8 collision pairs and 16 colliding bodies in 8 groups:
+
+
+
+
+************************************************************************************************
+
+************************************************************************************************
+
+Collisions by groups groups:
+
+Group Collision_Ground_Gripper1:
+		Body1 Ground --------> Graphic1 Ground_Graphics
+											--------> Body2 Gripper_1 --------> Graphic2 Gripper_2_Graphics
+
+
+
+		Body1 Gripper_1 --------> Graphic1 Gripper_2_Graphics
+											--------> Body2 Ground --------> Graphic2 Ground_Graphics
+
+
+
+Group Collision_Ground_Gripper2:
+		Body1 Ground --------> Graphic1 Ground_Graphics
+											--------> Body2 Gripper_2 --------> Graphic2 Gripper_1_Graphics
+
+
+
+		Body1 Gripper_2 --------> Graphic1 Gripper_1_Graphics
+											--------> Body2 Ground --------> Graphic2 Ground_Graphics
+
+
+
+Group Collision_Gripper1_Gripper2:
+		Body1 Gripper_1 --------> Graphic1 Gripper_2_Graphics
+											--------> Body2 Gripper_2 --------> Graphic2 Gripper_1_Graphics
+
+
+
+		Body1 Gripper_2 --------> Graphic1 Gripper_1_Graphics
+											--------> Body2 Gripper_1 --------> Graphic2 Gripper_2_Graphics
+
+
+
+Group Collision_Ground_Cube:
+		Body1 Ground --------> Graphic1 Ground_Graphics
+											--------> Body2 Cube --------> Graphic2 Cube_Graphics
+
+
+
+		Body1 Cube --------> Graphic1 Cube_Graphics
+											--------> Body2 Ground --------> Graphic2 Ground_Graphics
+
+
+
+Group Collision_Grippe1_Cube:
+		Body1 Cube --------> Graphic1 Cube_Graphics
+											--------> Body2 Gripper_1 --------> Graphic2 Gripper_2_Graphics
+
+
+
+		Body1 Gripper_1 --------> Graphic1 Gripper_2_Graphics
+											--------> Body2 Cube --------> Graphic2 Cube_Graphics
+
+
+
+Group Collision_Gripper2_Cube:
+		Body1 Cube --------> Graphic1 Cube_Graphics
+											--------> Body2 Gripper_2 --------> Graphic2 Gripper_1_Graphics
+
+
+
+		Body1 Gripper_2 --------> Graphic1 Gripper_1_Graphics
+											--------> Body2 Cube --------> Graphic2 Cube_Graphics
+
+
+
+Group Collision_XLink_Ground:
+		Body1 Ground --------> Graphic1 Ground_Graphics
+											--------> Body2 X_Link --------> Graphic2 X_Link_Graphics
+
+
+
+		Body1 X_Link --------> Graphic1 X_Link_Graphics
+											--------> Body2 Ground --------> Graphic2 Ground_Graphics
+
+
+
+Group Collision_Cube_LiftBoom:
+		Body1 Cube --------> Graphic1 Cube_Graphics
+											--------> Body2 Lift_Boom --------> Graphic2 Lift_Boom_Graphics
+
+
+
+		Body1 Lift_Boom --------> Graphic1 Lift_Boom_Graphics
+											--------> Body2 Cube --------> Graphic2 Cube_Graphics
+
+
+

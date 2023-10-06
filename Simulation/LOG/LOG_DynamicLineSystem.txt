@@ -1,0 +1,660 @@
+*************************************************************************************************************************
+General Parameters of DynamicLine CrawlerL:
+ 
+       m_L      dist     nPsys   nForces   scale_L   Density      pg.k      pg.c  pg.kBend  pg.cBend
+    0.8195   0.01821        45        45       0.5      6863     3e+04      0.01         1      0.01
+ 
+    kBendC    cBendC         k     kBend     cGlob     kColl     eColl   R_inner         R    R_coll
+        10      0.01     3e+04         1         0     1e+04      0.05         0      0.03     0.008
+ 
+      pg.E  pg.Ebend      Type
+         0        -1      Rope
+ 
+Name of parameterDefinition (PGraph)CrawlerL
+ 
+Topology of constraints:
+         0	DriverGearL
+         1	GuideRollerL1
+         2	GuideRollerL2
+         3	GuideRollerL3
+         4	GuideRollerL4
+         5	GuideRollerL5
+         6	GuideRollerL6
+         7	GuideRollerL7
+         8	GuideRollerL8
+         9	RollerGearL
+        10	GuideRollTop_L2
+        11	GuideRollTop_L1
+ 
+Data of constraints in line:CrawlerL
+ 
+    index     Type  Radius0   IOside        c     Mass      Izz    L_max        L
+        0   Pulley     0.03     Left     0.01     0.21     0.08     0.10     0.10
+        1   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        2   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        3   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        4   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        5   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        6   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        7   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        8   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        9   Pulley     0.03     Left     0.01     0.08     0.03     0.09     0.09
+       10   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+       11   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+ 
+ParticleData of DynamicLine CrawlerL:
+ 
+    index     Mass      DOC   iConst isActive  IOstate     PosX     PosY     PosZ   ownInd       ID          Name
+        0     0.35     0.10        3        1        -     0.16    -0.02     0.12       24       24      CrawlerL
+        1     0.35     0.08        3        1        -     0.18    -0.02     0.12       25       25      CrawlerL
+        2     0.35     0.06        3        1        -     0.19    -0.04     0.12       26       26      CrawlerL
+        3     0.35     0.04        3        1        -     0.19    -0.06     0.12       27       27      CrawlerL
+        4     0.35     0.03        3        1        -     0.18    -0.07     0.12       28       28      CrawlerL
+        5     0.35     0.01        3        1        -     0.16    -0.08     0.12       29       29      CrawlerL
+        6     0.35    -0.01        2        1   Output     0.14    -0.08     0.12       30       30      CrawlerL
+        7     0.35     0.02        1        1    Input     0.12    -0.08     0.12       31       31      CrawlerL
+        8     0.35    -0.00        2        1   Output     0.11    -0.07     0.12       32       32      CrawlerL
+        9     0.35     0.01        1        1    Input     0.09    -0.07     0.12       33       33      CrawlerL
+       10     0.35    -0.01        2        1   Output     0.07    -0.07     0.12       34       34      CrawlerL
+       11     0.35     0.01        1        1    Input     0.05    -0.07     0.12       35       35      CrawlerL
+       12     0.35    -0.01        2        1   Output     0.03    -0.07     0.12       36       36      CrawlerL
+       13     0.35     0.00        1        1    Input     0.01    -0.07     0.12       37       37      CrawlerL
+       14     0.35     0.01        1        1    Input    -0.00    -0.07     0.12       38       38      CrawlerL
+       15     0.35    -0.01        2        1   Output    -0.02    -0.07     0.12       39       39      CrawlerL
+       16     0.35     0.01        1        1    Input    -0.04    -0.07     0.12       40       40      CrawlerL
+       17     0.35    -0.01        2        1   Output    -0.06    -0.07     0.12       41       41      CrawlerL
+       18     0.35     0.00        1        1    Input    -0.08    -0.07     0.12       42       42      CrawlerL
+       19     0.35     0.01        1        1    Input    -0.10    -0.07     0.12       43       43      CrawlerL
+       20     0.35    -0.01        2        1   Output    -0.11    -0.07     0.12       44       44      CrawlerL
+       21     0.35     0.00        0        1        -    -0.13    -0.07     0.12       45       45      CrawlerL
+       22     0.35     0.09        1        1    Input    -0.15    -0.07     0.12       46       46      CrawlerL
+       23     0.35     0.08        3        1        -    -0.17    -0.07     0.12       47       47      CrawlerL
+       24     0.35     0.06        3        1        -    -0.18    -0.06     0.12       48       48      CrawlerL
+       25     0.35     0.04        3        1        -    -0.19    -0.05     0.12       49       49      CrawlerL
+       26     0.35     0.02        3        1        -    -0.18    -0.03     0.12       50       50      CrawlerL
+       27     0.35     0.00        3        1        -    -0.17    -0.02     0.12       51       51      CrawlerL
+       28     0.35    -0.02        2        1   Output    -0.15    -0.02     0.12       52       52      CrawlerL
+       29     0.35     0.00        0        1        -    -0.13    -0.01     0.12       53       53      CrawlerL
+       30     0.35     0.00        0        1        -    -0.11    -0.01     0.12       54       54      CrawlerL
+       31     0.35     0.00        0        1        -    -0.09    -0.01     0.12       55       55      CrawlerL
+       32     0.35     0.00        0        1        -    -0.08    -0.01     0.12       56       56      CrawlerL
+       33     0.35     0.02        1        1    Input    -0.06    -0.00     0.12       57       57      CrawlerL
+       34     0.35    -0.00        2        1   Output    -0.04    -0.00     0.12       58       58      CrawlerL
+       35     0.35     0.00        0        1        -    -0.02    -0.00     0.12       59       59      CrawlerL
+       36     0.35     0.00        0        1        -    -0.00    -0.00     0.12       60       60      CrawlerL
+       37     0.35     0.00        0        1        -     0.01    -0.00     0.12       61       61      CrawlerL
+       38     0.35     0.01        1        1    Input     0.03    -0.00     0.12       62       62      CrawlerL
+       39     0.35    -0.00        2        1   Output     0.05    -0.00     0.12       63       63      CrawlerL
+       40     0.35     0.00        0        1        -     0.07    -0.01     0.12       64       64      CrawlerL
+       41     0.35     0.00        0        1        -     0.09    -0.01     0.12       65       65      CrawlerL
+       42     0.35     0.00        0        1        -     0.10    -0.01     0.12       66       66      CrawlerL
+       43     0.35     0.00        0        1        -     0.12    -0.01     0.12       67       67      CrawlerL
+       44     0.35     0.12        1        1    Input     0.14    -0.01     0.12       68       68      CrawlerL
+ 
+ 
+Segmentdata of DynamicLine CrawlerL:
+ 
+    index     m_L0      m_L
+        0   0.0461   0.0000
+        1   0.0310   0.0000
+        2   0.0300   0.0000
+        3   0.0310   0.0000
+        4   0.0300   0.0000
+        5   0.0310   0.0000
+        6   0.0300   0.0000
+        7   0.0310   0.0000
+        8   0.0507   0.0000
+        9   0.1207   0.0000
+       10   0.0880   0.0000
+       11   0.1141   0.0000
+ 
+*************************************************************************************************************************
+General Parameters of DynamicLine CrawlerL:
+ 
+       m_L      dist     nPsys   nForces   scale_L   Density      pg.k      pg.c  pg.kBend  pg.cBend
+    0.8195   0.01821        45        45       0.5      6863     3e+04      0.01         1      0.01
+ 
+    kBendC    cBendC         k     kBend     cGlob     kColl     eColl   R_inner         R    R_coll
+        10      0.01     3e+04         1         0     1e+04      0.05         0      0.03     0.008
+ 
+      pg.E  pg.Ebend      Type
+         0        -1      Rope
+ 
+Name of parameterDefinition (PGraph)CrawlerL
+ 
+Topology of constraints:
+         0	DriverGearL
+         1	GuideRollerL1
+         2	GuideRollerL2
+         3	GuideRollerL3
+         4	GuideRollerL4
+         5	GuideRollerL5
+         6	GuideRollerL6
+         7	GuideRollerL7
+         8	GuideRollerL8
+         9	RollerGearL
+        10	GuideRollTop_L2
+        11	GuideRollTop_L1
+ 
+Data of constraints in line:CrawlerL
+ 
+    index     Type  Radius0   IOside        c     Mass      Izz    L_max        L
+        0   Pulley     0.03     Left     0.01     0.21     0.08     0.10     0.10
+        1   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        2   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        3   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        4   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        5   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        6   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        7   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        8   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        9   Pulley     0.03     Left     0.01     0.08     0.03     0.09     0.09
+       10   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+       11   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+ 
+ParticleData of DynamicLine CrawlerL:
+ 
+    index     Mass      DOC   iConst isActive  IOstate     PosX     PosY     PosZ   ownInd       ID          Name
+        0     0.35     0.10        3        1        -     0.16    -0.02     0.10       69       69      CrawlerL
+        1     0.35     0.08        3        1        -     0.18    -0.02     0.10       70       70      CrawlerL
+        2     0.35     0.06        3        1        -     0.19    -0.04     0.10       71       71      CrawlerL
+        3     0.35     0.04        3        1        -     0.19    -0.06     0.10       72       72      CrawlerL
+        4     0.35     0.03        3        1        -     0.18    -0.07     0.10       73       73      CrawlerL
+        5     0.35     0.01        3        1        -     0.16    -0.08     0.10       74       74      CrawlerL
+        6     0.35    -0.01        2        1   Output     0.14    -0.08     0.10       75       75      CrawlerL
+        7     0.35     0.02        1        1    Input     0.12    -0.08     0.10       76       76      CrawlerL
+        8     0.35    -0.00        2        1   Output     0.11    -0.07     0.10       77       77      CrawlerL
+        9     0.35     0.01        1        1    Input     0.09    -0.07     0.10       78       78      CrawlerL
+       10     0.35    -0.01        2        1   Output     0.07    -0.07     0.10       79       79      CrawlerL
+       11     0.35     0.01        1        1    Input     0.05    -0.07     0.10       80       80      CrawlerL
+       12     0.35    -0.01        2        1   Output     0.03    -0.07     0.10       81       81      CrawlerL
+       13     0.35     0.00        1        1    Input     0.01    -0.07     0.10       82       82      CrawlerL
+       14     0.35     0.01        1        1    Input    -0.00    -0.07     0.10       83       83      CrawlerL
+       15     0.35    -0.01        2        1   Output    -0.02    -0.07     0.10       84       84      CrawlerL
+       16     0.35     0.01        1        1    Input    -0.04    -0.07     0.10       85       85      CrawlerL
+       17     0.35    -0.01        2        1   Output    -0.06    -0.07     0.10       86       86      CrawlerL
+       18     0.35     0.00        1        1    Input    -0.08    -0.07     0.10       87       87      CrawlerL
+       19     0.35     0.01        1        1    Input    -0.10    -0.07     0.10       88       88      CrawlerL
+       20     0.35    -0.01        2        1   Output    -0.11    -0.07     0.10       89       89      CrawlerL
+       21     0.35     0.00        0        1        -    -0.13    -0.07     0.10       90       90      CrawlerL
+       22     0.35     0.09        1        1    Input    -0.15    -0.07     0.10       91       91      CrawlerL
+       23     0.35     0.08        3        1        -    -0.17    -0.07     0.10       92       92      CrawlerL
+       24     0.35     0.06        3        1        -    -0.18    -0.06     0.10       93       93      CrawlerL
+       25     0.35     0.04        3        1        -    -0.19    -0.05     0.10       94       94      CrawlerL
+       26     0.35     0.02        3        1        -    -0.18    -0.03     0.10       95       95      CrawlerL
+       27     0.35     0.00        3        1        -    -0.17    -0.02     0.10       96       96      CrawlerL
+       28     0.35    -0.02        2        1   Output    -0.15    -0.02     0.10       97       97      CrawlerL
+       29     0.35     0.00        0        1        -    -0.13    -0.01     0.10       98       98      CrawlerL
+       30     0.35     0.00        0        1        -    -0.11    -0.01     0.10       99       99      CrawlerL
+       31     0.35     0.00        0        1        -    -0.09    -0.01     0.10      100      100      CrawlerL
+       32     0.35     0.00        0        1        -    -0.08    -0.01     0.10      101      101      CrawlerL
+       33     0.35     0.02        1        1    Input    -0.06    -0.00     0.10      102      102      CrawlerL
+       34     0.35    -0.00        2        1   Output    -0.04    -0.00     0.10      103      103      CrawlerL
+       35     0.35     0.00        0        1        -    -0.02    -0.00     0.10      104      104      CrawlerL
+       36     0.35     0.00        0        1        -    -0.00    -0.00     0.10      105      105      CrawlerL
+       37     0.35     0.00        0        1        -     0.01    -0.00     0.10      106      106      CrawlerL
+       38     0.35     0.01        1        1    Input     0.03    -0.00     0.10      107      107      CrawlerL
+       39     0.35    -0.00        2        1   Output     0.05    -0.00     0.10      108      108      CrawlerL
+       40     0.35     0.00        0        1        -     0.07    -0.01     0.10      109      109      CrawlerL
+       41     0.35     0.00        0        1        -     0.09    -0.01     0.10      110      110      CrawlerL
+       42     0.35     0.00        0        1        -     0.10    -0.01     0.10      111      111      CrawlerL
+       43     0.35     0.00        0        1        -     0.12    -0.01     0.10      112      112      CrawlerL
+       44     0.35     0.12        1        1    Input     0.14    -0.01     0.10      113      113      CrawlerL
+ 
+ 
+Segmentdata of DynamicLine CrawlerL:
+ 
+    index     m_L0      m_L
+        0   0.0461   0.0000
+        1   0.0310   0.0000
+        2   0.0300   0.0000
+        3   0.0310   0.0000
+        4   0.0300   0.0000
+        5   0.0310   0.0000
+        6   0.0300   0.0000
+        7   0.0310   0.0000
+        8   0.0507   0.0000
+        9   0.1207   0.0000
+       10   0.0880   0.0000
+       11   0.1141   0.0000
+ 
+*************************************************************************************************************************
+General Parameters of DynamicLine CrawlerL:
+ 
+       m_L      dist     nPsys   nForces   scale_L   Density      pg.k      pg.c  pg.kBend  pg.cBend
+    0.8195   0.01821        45        45       0.5      6863     3e+04      0.01         1      0.01
+ 
+    kBendC    cBendC         k     kBend     cGlob     kColl     eColl   R_inner         R    R_coll
+        10      0.01     3e+04         1         0     1e+04      0.05         0      0.03     0.008
+ 
+      pg.E  pg.Ebend      Type
+         0        -1      Rope
+ 
+Name of parameterDefinition (PGraph)CrawlerL
+ 
+Topology of constraints:
+         0	DriverGearL
+         1	GuideRollerL1
+         2	GuideRollerL2
+         3	GuideRollerL3
+         4	GuideRollerL4
+         5	GuideRollerL5
+         6	GuideRollerL6
+         7	GuideRollerL7
+         8	GuideRollerL8
+         9	RollerGearL
+        10	GuideRollTop_L2
+        11	GuideRollTop_L1
+ 
+Data of constraints in line:CrawlerL
+ 
+    index     Type  Radius0   IOside        c     Mass      Izz    L_max        L
+        0   Pulley     0.03     Left     0.01     0.21     0.08     0.10     0.10
+        1   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        2   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        3   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        4   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        5   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        6   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        7   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        8   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        9   Pulley     0.03     Left     0.01     0.08     0.03     0.09     0.09
+       10   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+       11   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+ 
+ParticleData of DynamicLine CrawlerL:
+ 
+    index     Mass      DOC   iConst isActive  IOstate     PosX     PosY     PosZ   ownInd       ID          Name
+        0     0.35     0.10        3        1        -     0.16    -0.02     0.07      114      114      CrawlerL
+        1     0.35     0.08        3        1        -     0.18    -0.02     0.07      115      115      CrawlerL
+        2     0.35     0.06        3        1        -     0.19    -0.04     0.07      116      116      CrawlerL
+        3     0.35     0.04        3        1        -     0.19    -0.06     0.07      117      117      CrawlerL
+        4     0.35     0.03        3        1        -     0.18    -0.07     0.07      118      118      CrawlerL
+        5     0.35     0.01        3        1        -     0.16    -0.08     0.07      119      119      CrawlerL
+        6     0.35    -0.01        2        1   Output     0.14    -0.08     0.07      120      120      CrawlerL
+        7     0.35     0.02        1        1    Input     0.12    -0.08     0.07      121      121      CrawlerL
+        8     0.35    -0.00        2        1   Output     0.11    -0.07     0.07      122      122      CrawlerL
+        9     0.35     0.01        1        1    Input     0.09    -0.07     0.07      123      123      CrawlerL
+       10     0.35    -0.01        2        1   Output     0.07    -0.07     0.07      124      124      CrawlerL
+       11     0.35     0.01        1        1    Input     0.05    -0.07     0.07      125      125      CrawlerL
+       12     0.35    -0.01        2        1   Output     0.03    -0.07     0.07      126      126      CrawlerL
+       13     0.35     0.00        1        1    Input     0.01    -0.07     0.07      127      127      CrawlerL
+       14     0.35     0.01        1        1    Input    -0.00    -0.07     0.07      128      128      CrawlerL
+       15     0.35    -0.01        2        1   Output    -0.02    -0.07     0.07      129      129      CrawlerL
+       16     0.35     0.01        1        1    Input    -0.04    -0.07     0.07      130      130      CrawlerL
+       17     0.35    -0.01        2        1   Output    -0.06    -0.07     0.07      131      131      CrawlerL
+       18     0.35     0.00        1        1    Input    -0.08    -0.07     0.07      132      132      CrawlerL
+       19     0.35     0.01        1        1    Input    -0.10    -0.07     0.07      133      133      CrawlerL
+       20     0.35    -0.01        2        1   Output    -0.11    -0.07     0.07      134      134      CrawlerL
+       21     0.35     0.00        0        1        -    -0.13    -0.07     0.07      135      135      CrawlerL
+       22     0.35     0.09        1        1    Input    -0.15    -0.07     0.07      136      136      CrawlerL
+       23     0.35     0.08        3        1        -    -0.17    -0.07     0.07      137      137      CrawlerL
+       24     0.35     0.06        3        1        -    -0.18    -0.06     0.07      138      138      CrawlerL
+       25     0.35     0.04        3        1        -    -0.19    -0.05     0.07      139      139      CrawlerL
+       26     0.35     0.02        3        1        -    -0.18    -0.03     0.07      140      140      CrawlerL
+       27     0.35     0.00        3        1        -    -0.17    -0.02     0.07      141      141      CrawlerL
+       28     0.35    -0.02        2        1   Output    -0.15    -0.02     0.07      142      142      CrawlerL
+       29     0.35     0.00        0        1        -    -0.13    -0.01     0.07      143      143      CrawlerL
+       30     0.35     0.00        0        1        -    -0.11    -0.01     0.07      144      144      CrawlerL
+       31     0.35     0.00        0        1        -    -0.09    -0.01     0.07      145      145      CrawlerL
+       32     0.35     0.00        0        1        -    -0.08    -0.01     0.07      146      146      CrawlerL
+       33     0.35     0.02        1        1    Input    -0.06    -0.00     0.07      147      147      CrawlerL
+       34     0.35    -0.00        2        1   Output    -0.04    -0.00     0.07      148      148      CrawlerL
+       35     0.35     0.00        0        1        -    -0.02    -0.00     0.07      149      149      CrawlerL
+       36     0.35     0.00        0        1        -    -0.00    -0.00     0.07      150      150      CrawlerL
+       37     0.35     0.00        0        1        -     0.01    -0.00     0.07      151      151      CrawlerL
+       38     0.35     0.01        1        1    Input     0.03    -0.00     0.07      152      152      CrawlerL
+       39     0.35    -0.00        2        1   Output     0.05    -0.00     0.07      153      153      CrawlerL
+       40     0.35     0.00        0        1        -     0.07    -0.01     0.07      154      154      CrawlerL
+       41     0.35     0.00        0        1        -     0.09    -0.01     0.07      155      155      CrawlerL
+       42     0.35     0.00        0        1        -     0.10    -0.01     0.07      156      156      CrawlerL
+       43     0.35     0.00        0        1        -     0.12    -0.01     0.07      157      157      CrawlerL
+       44     0.35     0.12        1        1    Input     0.14    -0.01     0.07      158      158      CrawlerL
+ 
+ 
+Segmentdata of DynamicLine CrawlerL:
+ 
+    index     m_L0      m_L
+        0   0.0461   0.0000
+        1   0.0310   0.0000
+        2   0.0300   0.0000
+        3   0.0310   0.0000
+        4   0.0300   0.0000
+        5   0.0310   0.0000
+        6   0.0300   0.0000
+        7   0.0310   0.0000
+        8   0.0507   0.0000
+        9   0.1207   0.0000
+       10   0.0880   0.0000
+       11   0.1141   0.0000
+ 
+*************************************************************************************************************************
+General Parameters of DynamicLine CrawlerR:
+ 
+       m_L      dist     nPsys   nForces   scale_L   Density      pg.k      pg.c  pg.kBend  pg.cBend
+    0.8195   0.01821        45        45       0.5      6863     3e+04      0.01         1      0.01
+ 
+    kBendC    cBendC         k     kBend     cGlob     kColl     eColl   R_inner         R    R_coll
+        10      0.01     3e+04         1         0     1e+04      0.05         0      0.03     0.008
+ 
+      pg.E  pg.Ebend      Type
+         0        -1      Rope
+ 
+Name of parameterDefinition (PGraph)CrawlerR
+ 
+Topology of constraints:
+         0	DriveGearR
+         1	GuideRollerR1
+         2	GuideRollerR2
+         3	GuideRollerR3
+         4	GuideRollerR4
+         5	GuideRollerR5
+         6	GuideRollerR6
+         7	GuideRollerR7
+         8	GuideRollerR8
+         9	RollerGearR
+        10	GuideRollTop_R2
+        11	GuideRollTop_R1
+ 
+Data of constraints in line:CrawlerR
+ 
+    index     Type  Radius0   IOside        c     Mass      Izz    L_max        L
+        0   Pulley     0.03     Left     0.01     0.21     0.08     0.10     0.10
+        1   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        2   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        3   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        4   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        5   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        6   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        7   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        8   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        9   Pulley     0.03     Left     0.01     0.08     0.03     0.09     0.09
+       10   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+       11   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+ 
+ParticleData of DynamicLine CrawlerR:
+ 
+    index     Mass      DOC   iConst isActive  IOstate     PosX     PosY     PosZ   ownInd       ID          Name
+        0     0.35     0.10        3        1        -     0.16    -0.02    -0.07      159      159      CrawlerR
+        1     0.35     0.08        3        1        -     0.18    -0.03    -0.07      160      160      CrawlerR
+        2     0.35     0.06        3        1        -     0.19    -0.04    -0.07      161      161      CrawlerR
+        3     0.35     0.04        3        1        -     0.19    -0.06    -0.07      162      162      CrawlerR
+        4     0.35     0.03        3        1        -     0.18    -0.07    -0.07      163      163      CrawlerR
+        5     0.35     0.01        3        1        -     0.16    -0.08    -0.07      164      164      CrawlerR
+        6     0.35    -0.01        2        1   Output     0.14    -0.08    -0.07      165      165      CrawlerR
+        7     0.35     0.02        1        1    Input     0.12    -0.08    -0.07      166      166      CrawlerR
+        8     0.35    -0.00        2        1   Output     0.11    -0.08    -0.07      167      167      CrawlerR
+        9     0.35     0.01        1        1    Input     0.09    -0.08    -0.07      168      168      CrawlerR
+       10     0.35    -0.01        2        1   Output     0.07    -0.08    -0.07      169      169      CrawlerR
+       11     0.35     0.01        1        1    Input     0.05    -0.08    -0.07      170      170      CrawlerR
+       12     0.35    -0.01        2        1   Output     0.03    -0.08    -0.07      171      171      CrawlerR
+       13     0.35     0.00        1        1    Input     0.01    -0.08    -0.07      172      172      CrawlerR
+       14     0.35     0.01        1        1    Input    -0.00    -0.08    -0.07      173      173      CrawlerR
+       15     0.35    -0.01        2        1   Output    -0.02    -0.08    -0.07      174      174      CrawlerR
+       16     0.35     0.01        1        1    Input    -0.04    -0.08    -0.07      175      175      CrawlerR
+       17     0.35    -0.01        2        1   Output    -0.06    -0.08    -0.07      176      176      CrawlerR
+       18     0.35     0.00        1        1    Input    -0.08    -0.08    -0.07      177      177      CrawlerR
+       19     0.35     0.01        1        1    Input    -0.10    -0.08    -0.07      178      178      CrawlerR
+       20     0.35    -0.01        2        1   Output    -0.11    -0.08    -0.07      179      179      CrawlerR
+       21     0.35     0.00        0        1        -    -0.13    -0.08    -0.07      180      180      CrawlerR
+       22     0.35     0.09        1        1    Input    -0.15    -0.08    -0.07      181      181      CrawlerR
+       23     0.35     0.08        3        1        -    -0.17    -0.08    -0.07      182      182      CrawlerR
+       24     0.35     0.06        3        1        -    -0.18    -0.07    -0.07      183      183      CrawlerR
+       25     0.35     0.04        3        1        -    -0.19    -0.05    -0.07      184      184      CrawlerR
+       26     0.35     0.02        3        1        -    -0.18    -0.03    -0.07      185      185      CrawlerR
+       27     0.35     0.00        3        1        -    -0.17    -0.02    -0.07      186      186      CrawlerR
+       28     0.35    -0.02        2        1   Output    -0.15    -0.02    -0.07      187      187      CrawlerR
+       29     0.35     0.00        0        1        -    -0.13    -0.02    -0.07      188      188      CrawlerR
+       30     0.35     0.00        0        1        -    -0.11    -0.01    -0.07      189      189      CrawlerR
+       31     0.35     0.00        0        1        -    -0.09    -0.01    -0.07      190      190      CrawlerR
+       32     0.35     0.00        0        1        -    -0.08    -0.01    -0.07      191      191      CrawlerR
+       33     0.35     0.02        1        1    Input    -0.06    -0.01    -0.07      192      192      CrawlerR
+       34     0.35    -0.00        2        1   Output    -0.04    -0.00    -0.07      193      193      CrawlerR
+       35     0.35     0.00        0        1        -    -0.02    -0.00    -0.07      194      194      CrawlerR
+       36     0.35     0.00        0        1        -    -0.00    -0.00    -0.07      195      195      CrawlerR
+       37     0.35     0.00        0        1        -     0.01    -0.00    -0.07      196      196      CrawlerR
+       38     0.35     0.01        1        1    Input     0.03    -0.00    -0.07      197      197      CrawlerR
+       39     0.35    -0.00        2        1   Output     0.05    -0.00    -0.07      198      198      CrawlerR
+       40     0.35     0.00        0        1        -     0.07    -0.01    -0.07      199      199      CrawlerR
+       41     0.35     0.00        0        1        -     0.09    -0.01    -0.07      200      200      CrawlerR
+       42     0.35     0.00        0        1        -     0.10    -0.01    -0.07      201      201      CrawlerR
+       43     0.35     0.00        0        1        -     0.12    -0.01    -0.07      202      202      CrawlerR
+       44     0.35     0.12        1        1    Input     0.14    -0.02    -0.07      203      203      CrawlerR
+ 
+ 
+Segmentdata of DynamicLine CrawlerR:
+ 
+    index     m_L0      m_L
+        0   0.0461   0.0000
+        1   0.0310   0.0000
+        2   0.0300   0.0000
+        3   0.0310   0.0000
+        4   0.0300   0.0000
+        5   0.0310   0.0000
+        6   0.0300   0.0000
+        7   0.0310   0.0000
+        8   0.0507   0.0000
+        9   0.1207   0.0000
+       10   0.0880   0.0000
+       11   0.1141   0.0000
+ 
+*************************************************************************************************************************
+General Parameters of DynamicLine CrawlerR:
+ 
+       m_L      dist     nPsys   nForces   scale_L   Density      pg.k      pg.c  pg.kBend  pg.cBend
+    0.8195   0.01821        45        45       0.5      6863     3e+04      0.01         1      0.01
+ 
+    kBendC    cBendC         k     kBend     cGlob     kColl     eColl   R_inner         R    R_coll
+        10      0.01     3e+04         1         0     1e+04      0.05         0      0.03     0.008
+ 
+      pg.E  pg.Ebend      Type
+         0        -1      Rope
+ 
+Name of parameterDefinition (PGraph)CrawlerR
+ 
+Topology of constraints:
+         0	DriveGearR
+         1	GuideRollerR1
+         2	GuideRollerR2
+         3	GuideRollerR3
+         4	GuideRollerR4
+         5	GuideRollerR5
+         6	GuideRollerR6
+         7	GuideRollerR7
+         8	GuideRollerR8
+         9	RollerGearR
+        10	GuideRollTop_R2
+        11	GuideRollTop_R1
+ 
+Data of constraints in line:CrawlerR
+ 
+    index     Type  Radius0   IOside        c     Mass      Izz    L_max        L
+        0   Pulley     0.03     Left     0.01     0.21     0.08     0.10     0.10
+        1   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        2   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        3   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        4   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        5   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        6   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        7   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        8   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        9   Pulley     0.03     Left     0.01     0.08     0.03     0.09     0.09
+       10   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+       11   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+ 
+ParticleData of DynamicLine CrawlerR:
+ 
+    index     Mass      DOC   iConst isActive  IOstate     PosX     PosY     PosZ   ownInd       ID          Name
+        0     0.35     0.10        3        1        -     0.16    -0.02    -0.10      204      204      CrawlerR
+        1     0.35     0.08        3        1        -     0.18    -0.03    -0.10      205      205      CrawlerR
+        2     0.35     0.06        3        1        -     0.19    -0.04    -0.10      206      206      CrawlerR
+        3     0.35     0.04        3        1        -     0.19    -0.06    -0.10      207      207      CrawlerR
+        4     0.35     0.03        3        1        -     0.18    -0.07    -0.10      208      208      CrawlerR
+        5     0.35     0.01        3        1        -     0.16    -0.08    -0.10      209      209      CrawlerR
+        6     0.35    -0.01        2        1   Output     0.14    -0.08    -0.10      210      210      CrawlerR
+        7     0.35     0.02        1        1    Input     0.12    -0.08    -0.10      211      211      CrawlerR
+        8     0.35    -0.00        2        1   Output     0.11    -0.08    -0.10      212      212      CrawlerR
+        9     0.35     0.01        1        1    Input     0.09    -0.08    -0.10      213      213      CrawlerR
+       10     0.35    -0.01        2        1   Output     0.07    -0.08    -0.10      214      214      CrawlerR
+       11     0.35     0.01        1        1    Input     0.05    -0.08    -0.10      215      215      CrawlerR
+       12     0.35    -0.01        2        1   Output     0.03    -0.08    -0.10      216      216      CrawlerR
+       13     0.35     0.00        1        1    Input     0.01    -0.08    -0.10      217      217      CrawlerR
+       14     0.35     0.01        1        1    Input    -0.00    -0.08    -0.10      218      218      CrawlerR
+       15     0.35    -0.01        2        1   Output    -0.02    -0.08    -0.10      219      219      CrawlerR
+       16     0.35     0.01        1        1    Input    -0.04    -0.08    -0.10      220      220      CrawlerR
+       17     0.35    -0.01        2        1   Output    -0.06    -0.08    -0.10      221      221      CrawlerR
+       18     0.35     0.00        1        1    Input    -0.08    -0.08    -0.10      222      222      CrawlerR
+       19     0.35     0.01        1        1    Input    -0.10    -0.08    -0.10      223      223      CrawlerR
+       20     0.35    -0.01        2        1   Output    -0.11    -0.08    -0.10      224      224      CrawlerR
+       21     0.35     0.00        0        1        -    -0.13    -0.08    -0.10      225      225      CrawlerR
+       22     0.35     0.09        1        1    Input    -0.15    -0.08    -0.10      226      226      CrawlerR
+       23     0.35     0.08        3        1        -    -0.17    -0.08    -0.10      227      227      CrawlerR
+       24     0.35     0.06        3        1        -    -0.18    -0.07    -0.10      228      228      CrawlerR
+       25     0.35     0.04        3        1        -    -0.19    -0.05    -0.10      229      229      CrawlerR
+       26     0.35     0.02        3        1        -    -0.18    -0.03    -0.10      230      230      CrawlerR
+       27     0.35     0.00        3        1        -    -0.17    -0.02    -0.10      231      231      CrawlerR
+       28     0.35    -0.02        2        1   Output    -0.15    -0.02    -0.10      232      232      CrawlerR
+       29     0.35     0.00        0        1        -    -0.13    -0.02    -0.10      233      233      CrawlerR
+       30     0.35     0.00        0        1        -    -0.11    -0.01    -0.10      234      234      CrawlerR
+       31     0.35     0.00        0        1        -    -0.09    -0.01    -0.10      235      235      CrawlerR
+       32     0.35     0.00        0        1        -    -0.08    -0.01    -0.10      236      236      CrawlerR
+       33     0.35     0.02        1        1    Input    -0.06    -0.01    -0.10      237      237      CrawlerR
+       34     0.35    -0.00        2        1   Output    -0.04    -0.00    -0.10      238      238      CrawlerR
+       35     0.35     0.00        0        1        -    -0.02    -0.00    -0.10      239      239      CrawlerR
+       36     0.35     0.00        0        1        -    -0.00    -0.00    -0.10      240      240      CrawlerR
+       37     0.35     0.00        0        1        -     0.01    -0.00    -0.10      241      241      CrawlerR
+       38     0.35     0.01        1        1    Input     0.03    -0.00    -0.10      242      242      CrawlerR
+       39     0.35    -0.00        2        1   Output     0.05    -0.00    -0.10      243      243      CrawlerR
+       40     0.35     0.00        0        1        -     0.07    -0.01    -0.10      244      244      CrawlerR
+       41     0.35     0.00        0        1        -     0.09    -0.01    -0.10      245      245      CrawlerR
+       42     0.35     0.00        0        1        -     0.10    -0.01    -0.10      246      246      CrawlerR
+       43     0.35     0.00        0        1        -     0.12    -0.01    -0.10      247      247      CrawlerR
+       44     0.35     0.12        1        1    Input     0.14    -0.02    -0.10      248      248      CrawlerR
+ 
+ 
+Segmentdata of DynamicLine CrawlerR:
+ 
+    index     m_L0      m_L
+        0   0.0461   0.0000
+        1   0.0310   0.0000
+        2   0.0300   0.0000
+        3   0.0310   0.0000
+        4   0.0300   0.0000
+        5   0.0310   0.0000
+        6   0.0300   0.0000
+        7   0.0310   0.0000
+        8   0.0507   0.0000
+        9   0.1207   0.0000
+       10   0.0880   0.0000
+       11   0.1141   0.0000
+ 
+*************************************************************************************************************************
+General Parameters of DynamicLine CrawlerR:
+ 
+       m_L      dist     nPsys   nForces   scale_L   Density      pg.k      pg.c  pg.kBend  pg.cBend
+    0.8195   0.01821        45        45       0.5      6863     3e+04      0.01         1      0.01
+ 
+    kBendC    cBendC         k     kBend     cGlob     kColl     eColl   R_inner         R    R_coll
+        10      0.01     3e+04         1         0     1e+04      0.05         0      0.03     0.008
+ 
+      pg.E  pg.Ebend      Type
+         0        -1      Rope
+ 
+Name of parameterDefinition (PGraph)CrawlerR
+ 
+Topology of constraints:
+         0	DriveGearR
+         1	GuideRollerR1
+         2	GuideRollerR2
+         3	GuideRollerR3
+         4	GuideRollerR4
+         5	GuideRollerR5
+         6	GuideRollerR6
+         7	GuideRollerR7
+         8	GuideRollerR8
+         9	RollerGearR
+        10	GuideRollTop_R2
+        11	GuideRollTop_R1
+ 
+Data of constraints in line:CrawlerR
+ 
+    index     Type  Radius0   IOside        c     Mass      Izz    L_max        L
+        0   Pulley     0.03     Left     0.01     0.21     0.08     0.10     0.10
+        1   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        2   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        3   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        4   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        5   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        6   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        7   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        8   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+        9   Pulley     0.03     Left     0.01     0.08     0.03     0.09     0.09
+       10   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+       11   Pulley     0.01     Left     0.01     0.01     0.00     0.00     0.00
+ 
+ParticleData of DynamicLine CrawlerR:
+ 
+    index     Mass      DOC   iConst isActive  IOstate     PosX     PosY     PosZ   ownInd       ID          Name
+        0     0.35     0.10        3        1        -     0.16    -0.02    -0.12      249      249      CrawlerR
+        1     0.35     0.08        3        1        -     0.18    -0.03    -0.12      250      250      CrawlerR
+        2     0.35     0.06        3        1        -     0.19    -0.04    -0.12      251      251      CrawlerR
+        3     0.35     0.04        3        1        -     0.19    -0.06    -0.12      252      252      CrawlerR
+        4     0.35     0.03        3        1        -     0.18    -0.07    -0.12      253      253      CrawlerR
+        5     0.35     0.01        3        1        -     0.16    -0.08    -0.12      254      254      CrawlerR
+        6     0.35    -0.01        2        1   Output     0.14    -0.08    -0.12      255      255      CrawlerR
+        7     0.35     0.02        1        1    Input     0.12    -0.08    -0.12      256      256      CrawlerR
+        8     0.35    -0.00        2        1   Output     0.11    -0.08    -0.12      257      257      CrawlerR
+        9     0.35     0.01        1        1    Input     0.09    -0.08    -0.12      258      258      CrawlerR
+       10     0.35    -0.01        2        1   Output     0.07    -0.08    -0.12      259      259      CrawlerR
+       11     0.35     0.01        1        1    Input     0.05    -0.08    -0.12      260      260      CrawlerR
+       12     0.35    -0.01        2        1   Output     0.03    -0.08    -0.12      261      261      CrawlerR
+       13     0.35     0.00        1        1    Input     0.01    -0.08    -0.12      262      262      CrawlerR
+       14     0.35     0.01        1        1    Input    -0.00    -0.08    -0.12      263      263      CrawlerR
+       15     0.35    -0.01        2        1   Output    -0.02    -0.08    -0.12      264      264      CrawlerR
+       16     0.35     0.01        1        1    Input    -0.04    -0.08    -0.12      265      265      CrawlerR
+       17     0.35    -0.01        2        1   Output    -0.06    -0.08    -0.12      266      266      CrawlerR
+       18     0.35     0.00        1        1    Input    -0.08    -0.08    -0.12      267      267      CrawlerR
+       19     0.35     0.01        1        1    Input    -0.10    -0.08    -0.12      268      268      CrawlerR
+       20     0.35    -0.01        2        1   Output    -0.11    -0.08    -0.12      269      269      CrawlerR
+       21     0.35     0.00        0        1        -    -0.13    -0.08    -0.12      270      270      CrawlerR
+       22     0.35     0.09        1        1    Input    -0.15    -0.08    -0.12      271      271      CrawlerR
+       23     0.35     0.08        3        1        -    -0.17    -0.08    -0.12      272      272      CrawlerR
+       24     0.35     0.06        3        1        -    -0.18    -0.07    -0.12      273      273      CrawlerR
+       25     0.35     0.04        3        1        -    -0.19    -0.05    -0.12      274      274      CrawlerR
+       26     0.35     0.02        3        1        -    -0.18    -0.03    -0.12      275      275      CrawlerR
+       27     0.35     0.00        3        1        -    -0.17    -0.02    -0.12      276      276      CrawlerR
+       28     0.35    -0.02        2        1   Output    -0.15    -0.02    -0.12      277      277      CrawlerR
+       29     0.35     0.00        0        1        -    -0.13    -0.02    -0.12      278      278      CrawlerR
+       30     0.35     0.00        0        1        -    -0.11    -0.01    -0.12      279      279      CrawlerR
+       31     0.35     0.00        0        1        -    -0.09    -0.01    -0.12      280      280      CrawlerR
+       32     0.35     0.00        0        1        -    -0.08    -0.01    -0.12      281      281      CrawlerR
+       33     0.35     0.02        1        1    Input    -0.06    -0.01    -0.12      282      282      CrawlerR
+       34     0.35    -0.00        2        1   Output    -0.04    -0.00    -0.12      283      283      CrawlerR
+       35     0.35     0.00        0        1        -    -0.02    -0.00    -0.12      284      284      CrawlerR
+       36     0.35     0.00        0        1        -    -0.00    -0.00    -0.12      285      285      CrawlerR
+       37     0.35     0.00        0        1        -     0.01    -0.00    -0.12      286      286      CrawlerR
+       38     0.35     0.01        1        1    Input     0.03    -0.00    -0.12      287      287      CrawlerR
+       39     0.35    -0.00        2        1   Output     0.05    -0.00    -0.12      288      288      CrawlerR
+       40     0.35     0.00        0        1        -     0.07    -0.01    -0.12      289      289      CrawlerR
+       41     0.35     0.00        0        1        -     0.09    -0.01    -0.12      290      290      CrawlerR
+       42     0.35     0.00        0        1        -     0.10    -0.01    -0.12      291      291      CrawlerR
+       43     0.35     0.00        0        1        -     0.12    -0.01    -0.12      292      292      CrawlerR
+       44     0.35     0.12        1        1    Input     0.14    -0.02    -0.12      293      293      CrawlerR
+ 
+ 
+Segmentdata of DynamicLine CrawlerR:
+ 
+    index     m_L0      m_L
+        0   0.0461   0.0000
+        1   0.0310   0.0000
+        2   0.0300   0.0000
+        3   0.0310   0.0000
+        4   0.0300   0.0000
+        5   0.0310   0.0000
+        6   0.0300   0.0000
+        7   0.0310   0.0000
+        8   0.0507   0.0000
+        9   0.1207   0.0000
+       10   0.0880   0.0000
+       11   0.1141   0.0000
+ 

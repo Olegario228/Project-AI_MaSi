@@ -1,0 +1,289 @@
+Loaded Graphics:
+filepath:        ../3ds/Cube.3ds
+    ImportResult:
+        degenerate triangles discarded: 0
+    CacheHeader:
+        modTime:       2023-09-26T07:17
+        contentHash:   0
+        solverVersion: 4880
+    scale:       0.8
+    pos_x:       0
+    pos_y:       0
+    pos_z:       0
+    rot_123_x:   0
+    rot_123_y:   0
+    rot_123_z:   0
+    config:
+        partitionGranularityFlags:
+            PerMaterial     [ ]
+            PerGeode        [ ]
+            PerGeometry     [X]
+            PerPrimitiveSet [ ]
+            PerPrimitive    [ ]
+        vertexSharing:
+            AcrossSubMeshes [X]
+            AcrossMaterials [ ]
+        removeDegenerateFaces [X]
+        calcNormal            [ ]
+        calcMikkTSpace        [ ]
+        splitMeshes           [ ]
+        pruneLeaves           [ ]
+        flipNormals           [ ]
+        arrays:
+            Array(0) Position | Position | Position | Zero | 3
+            Array(1)  | None | Generic | Zero | 0
+            Array(2)  | None | Generic | Zero | 0
+            Array(3)  | None | Generic | Zero | 0
+            Array(4)  | None | Generic | Zero | 0
+            Array(5)  | None | Generic | Zero | 0
+            Array(6)  | None | Generic | Zero | 0
+            Array(7)  | None | Generic | Zero | 0
+            Array(8)  | None | Generic | Zero | 0
+            Array(9)  | None | Generic | Zero | 0
+            Array(10)  | None | Generic | Zero | 0
+            Array(11)  | None | Generic | Zero | 0
+            Array(12)  | None | Generic | Zero | 0
+            Array(13)  | None | Generic | Zero | 0
+            Array(14)  | None | Generic | Zero | 0
+            Array(15)  | None | Generic | Zero | 0
+        cacheFilepath:        C:\Users\sh24000\OneDrive - Savonia-ammattikorkeakoulu\Tiedostot\MeVEA\Test Project-Ai-MaSi\Simulation/Cache/Cube_Graphics_0000000000000000d4becc1cb965cd63.mesh
+filepath:        ../3ds/Gripper 1.3ds
+    ImportResult:
+        degenerate triangles discarded: 214
+    CacheHeader:
+        modTime:       2023-09-20T11:52
+        contentHash:   0
+        solverVersion: 4880
+    scale:       1
+    pos_x:       0
+    pos_y:       0
+    pos_z:       0
+    rot_123_x:   0
+    rot_123_y:   0
+    rot_123_z:   0
+    config:
+        partitionGranularityFlags:
+            PerMaterial     [ ]
+            PerGeode        [ ]
+            PerGeometry     [X]
+            PerPrimitiveSet [ ]
+            PerPrimitive    [ ]
+        vertexSharing:
+            AcrossSubMeshes [X]
+            AcrossMaterials [ ]
+        removeDegenerateFaces [X]
+        calcNormal            [ ]
+        calcMikkTSpace        [ ]
+        splitMeshes           [ ]
+        pruneLeaves           [ ]
+        flipNormals           [ ]
+        arrays:
+            Array(0) Position | Position | Position | Zero | 3
+            Array(1)  | None | Generic | Zero | 0
+            Array(2)  | None | Generic | Zero | 0
+            Array(3)  | None | Generic | Zero | 0
+            Array(4)  | None | Generic | Zero | 0
+            Array(5)  | None | Generic | Zero | 0
+            Array(6)  | None | Generic | Zero | 0
+            Array(7)  | None | Generic | Zero | 0
+            Array(8)  | None | Generic | Zero | 0
+            Array(9)  | None | Generic | Zero | 0
+            Array(10)  | None | Generic | Zero | 0
+            Array(11)  | None | Generic | Zero | 0
+            Array(12)  | None | Generic | Zero | 0
+            Array(13)  | None | Generic | Zero | 0
+            Array(14)  | None | Generic | Zero | 0
+            Array(15)  | None | Generic | Zero | 0
+        cacheFilepath:        C:\Users\sh24000\OneDrive - Savonia-ammattikorkeakoulu\Tiedostot\MeVEA\Test Project-Ai-MaSi\Simulation/Cache/Gripper_1_Graphics_00000000000000004771cffe6ccc6aad.mesh
+filepath:        ../3ds/Gripper 2.3ds
+    ImportResult:
+        degenerate triangles discarded: 209
+    CacheHeader:
+        modTime:       2023-09-20T11:50
+        contentHash:   0
+        solverVersion: 4880
+    scale:       1
+    pos_x:       0
+    pos_y:       0
+    pos_z:       0
+    rot_123_x:   0
+    rot_123_y:   0
+    rot_123_z:   0
+    config:
+        partitionGranularityFlags:
+            PerMaterial     [ ]
+            PerGeode        [ ]
+            PerGeometry     [X]
+            PerPrimitiveSet [ ]
+            PerPrimitive    [ ]
+        vertexSharing:
+            AcrossSubMeshes [X]
+            AcrossMaterials [ ]
+        removeDegenerateFaces [X]
+        calcNormal            [ ]
+        calcMikkTSpace        [ ]
+        splitMeshes           [ ]
+        pruneLeaves           [ ]
+        flipNormals           [ ]
+        arrays:
+            Array(0) Position | Position | Position | Zero | 3
+            Array(1)  | None | Generic | Zero | 0
+            Array(2)  | None | Generic | Zero | 0
+            Array(3)  | None | Generic | Zero | 0
+            Array(4)  | None | Generic | Zero | 0
+            Array(5)  | None | Generic | Zero | 0
+            Array(6)  | None | Generic | Zero | 0
+            Array(7)  | None | Generic | Zero | 0
+            Array(8)  | None | Generic | Zero | 0
+            Array(9)  | None | Generic | Zero | 0
+            Array(10)  | None | Generic | Zero | 0
+            Array(11)  | None | Generic | Zero | 0
+            Array(12)  | None | Generic | Zero | 0
+            Array(13)  | None | Generic | Zero | 0
+            Array(14)  | None | Generic | Zero | 0
+            Array(15)  | None | Generic | Zero | 0
+        cacheFilepath:        C:\Users\sh24000\OneDrive - Savonia-ammattikorkeakoulu\Tiedostot\MeVEA\Test Project-Ai-MaSi\Simulation/Cache/Gripper_2_Graphics_000000000000000051b54f56a0e24f04.mesh
+filepath:        ../3ds/Lift Boom.3ds
+    ImportResult:
+        degenerate triangles discarded: 981
+    CacheHeader:
+        modTime:       2023-09-13T07:35
+        contentHash:   0
+        solverVersion: 4880
+    scale:       1
+    pos_x:       0
+    pos_y:       0
+    pos_z:       0
+    rot_123_x:   0
+    rot_123_y:   0
+    rot_123_z:   0
+    config:
+        partitionGranularityFlags:
+            PerMaterial     [ ]
+            PerGeode        [ ]
+            PerGeometry     [X]
+            PerPrimitiveSet [ ]
+            PerPrimitive    [ ]
+        vertexSharing:
+            AcrossSubMeshes [X]
+            AcrossMaterials [ ]
+        removeDegenerateFaces [X]
+        calcNormal            [ ]
+        calcMikkTSpace        [ ]
+        splitMeshes           [ ]
+        pruneLeaves           [ ]
+        flipNormals           [ ]
+        arrays:
+            Array(0) Position | Position | Position | Zero | 3
+            Array(1)  | None | Generic | Zero | 0
+            Array(2)  | None | Generic | Zero | 0
+            Array(3)  | None | Generic | Zero | 0
+            Array(4)  | None | Generic | Zero | 0
+            Array(5)  | None | Generic | Zero | 0
+            Array(6)  | None | Generic | Zero | 0
+            Array(7)  | None | Generic | Zero | 0
+            Array(8)  | None | Generic | Zero | 0
+            Array(9)  | None | Generic | Zero | 0
+            Array(10)  | None | Generic | Zero | 0
+            Array(11)  | None | Generic | Zero | 0
+            Array(12)  | None | Generic | Zero | 0
+            Array(13)  | None | Generic | Zero | 0
+            Array(14)  | None | Generic | Zero | 0
+            Array(15)  | None | Generic | Zero | 0
+        cacheFilepath:        C:\Users\sh24000\OneDrive - Savonia-ammattikorkeakoulu\Tiedostot\MeVEA\Test Project-Ai-MaSi\Simulation/Cache/Lift_Boom_Graphics_0000000000000000c392d7331a8ae799.mesh
+filepath:        ../3ds/X Link.3ds
+    ImportResult:
+        degenerate triangles discarded: 0
+    CacheHeader:
+        modTime:       2023-09-19T11:59
+        contentHash:   0
+        solverVersion: 4880
+    scale:       1
+    pos_x:       0
+    pos_y:       0
+    pos_z:       0
+    rot_123_x:   0
+    rot_123_y:   0
+    rot_123_z:   0
+    config:
+        partitionGranularityFlags:
+            PerMaterial     [ ]
+            PerGeode        [ ]
+            PerGeometry     [X]
+            PerPrimitiveSet [ ]
+            PerPrimitive    [ ]
+        vertexSharing:
+            AcrossSubMeshes [X]
+            AcrossMaterials [ ]
+        removeDegenerateFaces [X]
+        calcNormal            [ ]
+        calcMikkTSpace        [ ]
+        splitMeshes           [ ]
+        pruneLeaves           [ ]
+        flipNormals           [ ]
+        arrays:
+            Array(0) Position | Position | Position | Zero | 3
+            Array(1)  | None | Generic | Zero | 0
+            Array(2)  | None | Generic | Zero | 0
+            Array(3)  | None | Generic | Zero | 0
+            Array(4)  | None | Generic | Zero | 0
+            Array(5)  | None | Generic | Zero | 0
+            Array(6)  | None | Generic | Zero | 0
+            Array(7)  | None | Generic | Zero | 0
+            Array(8)  | None | Generic | Zero | 0
+            Array(9)  | None | Generic | Zero | 0
+            Array(10)  | None | Generic | Zero | 0
+            Array(11)  | None | Generic | Zero | 0
+            Array(12)  | None | Generic | Zero | 0
+            Array(13)  | None | Generic | Zero | 0
+            Array(14)  | None | Generic | Zero | 0
+            Array(15)  | None | Generic | Zero | 0
+        cacheFilepath:        C:\Users\sh24000\OneDrive - Savonia-ammattikorkeakoulu\Tiedostot\MeVEA\Test Project-Ai-MaSi\Simulation/Cache/X_Link_Graphics_0000000000000000d83a1f85fb21c22b.mesh
+filepath:        ../Enviroment/Ground_grass_100m.3ds
+    ImportResult:
+        degenerate triangles discarded: 0
+    CacheHeader:
+        modTime:       2013-02-26T07:33
+        contentHash:   0
+        solverVersion: 4880
+    scale:       0.1
+    pos_x:       0
+    pos_y:       -0.1
+    pos_z:       0
+    rot_123_x:   0
+    rot_123_y:   0
+    rot_123_z:   0
+    config:
+        partitionGranularityFlags:
+            PerMaterial     [ ]
+            PerGeode        [ ]
+            PerGeometry     [X]
+            PerPrimitiveSet [ ]
+            PerPrimitive    [ ]
+        vertexSharing:
+            AcrossSubMeshes [X]
+            AcrossMaterials [ ]
+        removeDegenerateFaces [X]
+        calcNormal            [ ]
+        calcMikkTSpace        [ ]
+        splitMeshes           [ ]
+        pruneLeaves           [ ]
+        flipNormals           [ ]
+        arrays:
+            Array(0) Position | Position | Position | Zero | 3
+            Array(1)  | None | Generic | Zero | 0
+            Array(2)  | None | Generic | Zero | 0
+            Array(3)  | None | Generic | Zero | 0
+            Array(4)  | None | Generic | Zero | 0
+            Array(5)  | None | Generic | Zero | 0
+            Array(6)  | None | Generic | Zero | 0
+            Array(7)  | None | Generic | Zero | 0
+            Array(8)  | None | Generic | Zero | 0
+            Array(9)  | None | Generic | Zero | 0
+            Array(10)  | None | Generic | Zero | 0
+            Array(11)  | None | Generic | Zero | 0
+            Array(12)  | None | Generic | Zero | 0
+            Array(13)  | None | Generic | Zero | 0
+            Array(14)  | None | Generic | Zero | 0
+            Array(15)  | None | Generic | Zero | 0
+        cacheFilepath:        C:\Users\sh24000\OneDrive - Savonia-ammattikorkeakoulu\Tiedostot\MeVEA\Test Project-Ai-MaSi\Simulation/Cache/Ground_Graphics_000000000000000082f75640f79a202b.mesh

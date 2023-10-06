@@ -1,0 +1,162 @@
+
+INFORMATION: Checking model "New Project" topology.
+
+
+INFORMATION: Checking of kinematic loops.
+
+INFORMATION: End of kinematic loop at body "Tilt_Arm", last constraint is "Tilt_Arm_X_Link".
+INFORMATION: End of kinematic loop at body "Cube", last constraint is "Ground_Cube".
+INFORMATION: End of kinematic loop at body "Tilt_Boom", last constraint is "ArmEnd_TiltBoom".
+INFORMATION: End of kinematic loop at body "Gripper_2", last constraint is "Gripper2_GripperLink".
+INFORMATION: End of kinematic loop at body "Tilt_Boom", last constraint is "TiltBoom_TiltArm".
+INFORMATION: End of kinematic loop at body "Gripper_Base", last constraint is "GripperBase2_Gripper2".
+
+INFORMATION: Setting of parent constraints.
+
+INFORMATION: Parent constraint of body "Under_Carriage" is "Ground_UnderCarriage".
+INFORMATION: Parent constraint of body "Upper_Carriage" is "UnderCarriage_UpperCarriage".
+INFORMATION: Parent constraint of body "Lift_Boom" is "UpperCarriage_LiftBoom".
+INFORMATION: Parent constraint of body "Tilt_Boom" is "LiftBoom_TiltBoom".
+INFORMATION: Parent constraint of body "Arm_End" is "TiltBoom_ArmEnd".
+INFORMATION: Parent constraint of body "X_Link" is "Arm_End_X_Link".
+INFORMATION: Parent constraint of body "Tilt_Arm" is "Tilt_Arm_X_Link".
+INFORMATION: Parent constraint of body "Gripper_Base" is "ArmEnd_GripperBase".
+INFORMATION: Parent constraint of body "Gripper_1" is "GripperBase1_Gripper1".
+INFORMATION: Parent constraint of body "GripperLink" is "Gripper1_GripperLink".
+INFORMATION: Parent constraint of body "Gripper_2" is "Gripper2_GripperLink".
+INFORMATION: Parent constraint of body "Cube" is "Ground_Cube".
+
+INFORMATION: Checking of constraint order.
+
+Current body Cube, parent constraint Ground_Cube constraintIndex = 14, parent body Ground
+
+Current body GripperLink, parent constraint Gripper1_GripperLink constraintIndex = 12, parent body Gripper_1
+Current body Gripper_1, parent constraint GripperBase1_Gripper1 constraintIndex = 10, parent body Gripper_Base
+Current body Gripper_Base, parent constraint ArmEnd_GripperBase constraintIndex = 9, parent body Arm_End
+Current body Arm_End, parent constraint TiltBoom_ArmEnd constraintIndex = 4, parent body Tilt_Boom
+Current body Tilt_Boom, parent constraint LiftBoom_TiltBoom constraintIndex = 3, parent body Lift_Boom
+Current body Lift_Boom, parent constraint UpperCarriage_LiftBoom constraintIndex = 2, parent body Upper_Carriage
+Current body Upper_Carriage, parent constraint UnderCarriage_UpperCarriage constraintIndex = 1, parent body Under_Carriage
+Current body Under_Carriage, parent constraint Ground_UnderCarriage constraintIndex = 0, parent body Ground
+
+Current body Gripper_2, parent constraint Gripper2_GripperLink constraintIndex = 13, parent body GripperLink
+Current body GripperLink, parent constraint Gripper1_GripperLink constraintIndex = 12, parent body Gripper_1
+Current body Gripper_1, parent constraint GripperBase1_Gripper1 constraintIndex = 10, parent body Gripper_Base
+Current body Gripper_Base, parent constraint ArmEnd_GripperBase constraintIndex = 9, parent body Arm_End
+Current body Arm_End, parent constraint TiltBoom_ArmEnd constraintIndex = 4, parent body Tilt_Boom
+Current body Tilt_Boom, parent constraint LiftBoom_TiltBoom constraintIndex = 3, parent body Lift_Boom
+Current body Lift_Boom, parent constraint UpperCarriage_LiftBoom constraintIndex = 2, parent body Upper_Carriage
+Current body Upper_Carriage, parent constraint UnderCarriage_UpperCarriage constraintIndex = 1, parent body Under_Carriage
+Current body Under_Carriage, parent constraint Ground_UnderCarriage constraintIndex = 0, parent body Ground
+
+Current body Gripper_1, parent constraint GripperBase1_Gripper1 constraintIndex = 10, parent body Gripper_Base
+Current body Gripper_Base, parent constraint ArmEnd_GripperBase constraintIndex = 9, parent body Arm_End
+Current body Arm_End, parent constraint TiltBoom_ArmEnd constraintIndex = 4, parent body Tilt_Boom
+Current body Tilt_Boom, parent constraint LiftBoom_TiltBoom constraintIndex = 3, parent body Lift_Boom
+Current body Lift_Boom, parent constraint UpperCarriage_LiftBoom constraintIndex = 2, parent body Upper_Carriage
+Current body Upper_Carriage, parent constraint UnderCarriage_UpperCarriage constraintIndex = 1, parent body Under_Carriage
+Current body Under_Carriage, parent constraint Ground_UnderCarriage constraintIndex = 0, parent body Ground
+
+Current body Gripper_Base, parent constraint ArmEnd_GripperBase constraintIndex = 9, parent body Arm_End
+Current body Arm_End, parent constraint TiltBoom_ArmEnd constraintIndex = 4, parent body Tilt_Boom
+Current body Tilt_Boom, parent constraint LiftBoom_TiltBoom constraintIndex = 3, parent body Lift_Boom
+Current body Lift_Boom, parent constraint UpperCarriage_LiftBoom constraintIndex = 2, parent body Upper_Carriage
+Current body Upper_Carriage, parent constraint UnderCarriage_UpperCarriage constraintIndex = 1, parent body Under_Carriage
+Current body Under_Carriage, parent constraint Ground_UnderCarriage constraintIndex = 0, parent body Ground
+
+Current body X_Link, parent constraint Arm_End_X_Link constraintIndex = 6, parent body Arm_End
+Current body Arm_End, parent constraint TiltBoom_ArmEnd constraintIndex = 4, parent body Tilt_Boom
+Current body Tilt_Boom, parent constraint LiftBoom_TiltBoom constraintIndex = 3, parent body Lift_Boom
+Current body Lift_Boom, parent constraint UpperCarriage_LiftBoom constraintIndex = 2, parent body Upper_Carriage
+Current body Upper_Carriage, parent constraint UnderCarriage_UpperCarriage constraintIndex = 1, parent body Under_Carriage
+Current body Under_Carriage, parent constraint Ground_UnderCarriage constraintIndex = 0, parent body Ground
+
+Current body Tilt_Arm, parent constraint Tilt_Arm_X_Link constraintIndex = 7, parent body X_Link
+Current body X_Link, parent constraint Arm_End_X_Link constraintIndex = 6, parent body Arm_End
+Current body Arm_End, parent constraint TiltBoom_ArmEnd constraintIndex = 4, parent body Tilt_Boom
+Current body Tilt_Boom, parent constraint LiftBoom_TiltBoom constraintIndex = 3, parent body Lift_Boom
+Current body Lift_Boom, parent constraint UpperCarriage_LiftBoom constraintIndex = 2, parent body Upper_Carriage
+Current body Upper_Carriage, parent constraint UnderCarriage_UpperCarriage constraintIndex = 1, parent body Under_Carriage
+Current body Under_Carriage, parent constraint Ground_UnderCarriage constraintIndex = 0, parent body Ground
+
+Current body Arm_End, parent constraint TiltBoom_ArmEnd constraintIndex = 4, parent body Tilt_Boom
+Current body Tilt_Boom, parent constraint LiftBoom_TiltBoom constraintIndex = 3, parent body Lift_Boom
+Current body Lift_Boom, parent constraint UpperCarriage_LiftBoom constraintIndex = 2, parent body Upper_Carriage
+Current body Upper_Carriage, parent constraint UnderCarriage_UpperCarriage constraintIndex = 1, parent body Under_Carriage
+Current body Under_Carriage, parent constraint Ground_UnderCarriage constraintIndex = 0, parent body Ground
+
+Current body Tilt_Boom, parent constraint LiftBoom_TiltBoom constraintIndex = 3, parent body Lift_Boom
+Current body Lift_Boom, parent constraint UpperCarriage_LiftBoom constraintIndex = 2, parent body Upper_Carriage
+Current body Upper_Carriage, parent constraint UnderCarriage_UpperCarriage constraintIndex = 1, parent body Under_Carriage
+Current body Under_Carriage, parent constraint Ground_UnderCarriage constraintIndex = 0, parent body Ground
+
+Current body Lift_Boom, parent constraint UpperCarriage_LiftBoom constraintIndex = 2, parent body Upper_Carriage
+Current body Upper_Carriage, parent constraint UnderCarriage_UpperCarriage constraintIndex = 1, parent body Under_Carriage
+Current body Under_Carriage, parent constraint Ground_UnderCarriage constraintIndex = 0, parent body Ground
+
+Current body Upper_Carriage, parent constraint UnderCarriage_UpperCarriage constraintIndex = 1, parent body Under_Carriage
+Current body Under_Carriage, parent constraint Ground_UnderCarriage constraintIndex = 0, parent body Ground
+
+Current body Under_Carriage, parent constraint Ground_UnderCarriage constraintIndex = 0, parent body Ground
+
+
+
+INFORMATION: Updated model topology:
+
+INFORMATION: Bodies
+INFORMATION: Parent body of "Under_Carriage" is "Ground".
+INFORMATION: Parent body of "Upper_Carriage" is "Under_Carriage".
+INFORMATION: Parent body of "Lift_Boom" is "Upper_Carriage".
+INFORMATION: Parent body of "Tilt_Boom" is "Lift_Boom".
+INFORMATION: Parent body of "Arm_End" is "Tilt_Boom".
+INFORMATION: Parent body of "Tilt_Arm" is "X_Link".
+INFORMATION: Parent body of "X_Link" is "Arm_End".
+INFORMATION: Parent body of "Gripper_Base" is "Arm_End".
+INFORMATION: Parent body of "Gripper_1" is "Gripper_Base".
+INFORMATION: Parent body of "Gripper_2" is "GripperLink".
+INFORMATION: Parent body of "GripperLink" is "Gripper_1".
+INFORMATION: Parent body of "Cube" is "Ground".
+
+INFORMATION: Constraints
+INFORMATION: Preceding body of constraint "Ground_UnderCarriage" is "Ground".
+INFORMATION: Following body of constraint "Ground_UnderCarriage" is "Under_Carriage".
+
+INFORMATION: Preceding body of constraint "UnderCarriage_UpperCarriage" is "Under_Carriage".
+INFORMATION: Following body of constraint "UnderCarriage_UpperCarriage" is "Upper_Carriage".
+
+INFORMATION: Preceding body of constraint "UpperCarriage_LiftBoom" is "Upper_Carriage".
+INFORMATION: Following body of constraint "UpperCarriage_LiftBoom" is "Lift_Boom".
+
+INFORMATION: Preceding body of constraint "LiftBoom_TiltBoom" is "Lift_Boom".
+INFORMATION: Following body of constraint "LiftBoom_TiltBoom" is "Tilt_Boom".
+
+INFORMATION: Preceding body of constraint "TiltBoom_ArmEnd" is "Tilt_Boom".
+INFORMATION: Following body of constraint "TiltBoom_ArmEnd" is "Arm_End".
+
+INFORMATION: Constraint "TiltBoom_TiltArm" is a cut joint.
+
+INFORMATION: Preceding body of constraint "Arm_End_X_Link" is "Arm_End".
+INFORMATION: Following body of constraint "Arm_End_X_Link" is "X_Link".
+
+INFORMATION: Preceding body of constraint "Tilt_Arm_X_Link" is "X_Link".
+INFORMATION: Following body of constraint "Tilt_Arm_X_Link" is "Tilt_Arm".
+
+INFORMATION: Constraint "ArmEnd_TiltBoom" is a cut joint.
+
+INFORMATION: Preceding body of constraint "ArmEnd_GripperBase" is "Arm_End".
+INFORMATION: Following body of constraint "ArmEnd_GripperBase" is "Gripper_Base".
+
+INFORMATION: Preceding body of constraint "GripperBase1_Gripper1" is "Gripper_Base".
+INFORMATION: Following body of constraint "GripperBase1_Gripper1" is "Gripper_1".
+
+INFORMATION: Constraint "GripperBase2_Gripper2" is a cut joint.
+
+INFORMATION: Preceding body of constraint "Gripper1_GripperLink" is "Gripper_1".
+INFORMATION: Following body of constraint "Gripper1_GripperLink" is "GripperLink".
+
+INFORMATION: Preceding body of constraint "Gripper2_GripperLink" is "GripperLink".
+INFORMATION: Following body of constraint "Gripper2_GripperLink" is "Gripper_2".
+
+INFORMATION: Preceding body of constraint "Ground_Cube" is "Ground".
+INFORMATION: Following body of constraint "Ground_Cube" is "Cube".
+

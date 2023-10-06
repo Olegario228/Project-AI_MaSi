@@ -1,0 +1,42 @@
+11:59:47: Log started
+11:59:47: Starting Init
+11:59:47: Init Collisions
+11:59:47: Init TyreCollisions
+11:59:47: End Collision Init
+11:59:47: Setting Client Parameters
+11:59:47: Calling Case Specific Init
+11:59:47: Calling CreateObjects
+11:59:47: Initializing particles
+11:59:47: Creating collisions objects
+11:59:48: Creating global wind emitter
+11:59:48: Creating virtual sensors
+11:59:48: Simulation objects created
+11:59:48: Creating PrintRequests
+11:59:48: Creating data collector
+11:59:48: Initializing ScriptEngine
+11:59:48: Calling InitializeObjects
+11:59:48: Solver initialization complete
+11:59:48: Waiting for start command
+11:59:51: Start command received
+11:59:51: Starting particles in threaded mode
+11:59:51: 
+
+ SOLUTION STARTED
+11:59:51: Analysis length 30000.000000 seconds
+
+11:59:51: Round=500, Average time=  0.000233 Last   0.000255 s Biggest 0.005430
+11:59:52: Round=1000, Average time=  0.000227 Last   0.000252 s Biggest 0.000456
+11:59:52: Ending all collision threads
+11:59:52: Waiting for particle solver
+11:59:52: Ending particle solver
+11:59:52: Main integrator loop ended, run=false
+11:59:52: 
+
+ SOLUTION FINISHED11:59:52: 
+  1.08 s analysis in   1.0820 s
+ RT.ratio=1.005
+11:59:52: TaskHandler writing results if any
+11:59:52: Store file 
+11:59:52: Solver cleanup done, exiting...
+11:59:52: Ending Simulation, GUI sent stop
+11:59:55: Solver object in destructor

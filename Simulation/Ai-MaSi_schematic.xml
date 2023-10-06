@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <Schematics>
+    <Hydr1>
+      <Elements>
+        <DV43_LiftB Name="DV43_LiftB" className="DV43" x="473" y="362" rotate="0" mirrorx="No" mirrory="No" />
+        <DV43_TiltB Name="DV43_TiltB" className="DV43" x="311" y="244" rotate="0" mirrorx="No" mirrory="No" />
+        <Cyl1_92mm Name="Cyl1_92mm" className="Cylinder" x="242" y="438" rotate="0" mirrorx="No" mirrory="No" />
+        <Cyl2_92mm Name="Cyl2_92mm" className="Cylinder" x="248" y="561" rotate="0" mirrorx="No" mirrory="No" />
+        <Cyl_125mm Name="Cyl_125mm" className="Cylinder" x="237" y="369" rotate="0" mirrorx="No" mirrory="No" />
+        <Vol_Pump Name="Vol_Pump" className="Volume" x="724.00006103515625" y="301" rotate="0" mirrorx="No" mirrory="No" />
+        <Vol_Tank Name="Vol_Tank" className="Volume" x="522" y="180" rotate="0" mirrorx="No" mirrory="No" />
+        <Vol_LiftB_A Name="Vol_LiftB_A" className="Volume" x="162" y="499" rotate="0" mirrorx="No" mirrory="No" />
+        <Vol_LiftB_B Name="Vol_LiftB_B" className="Volume" x="410.0001220703125" y="485" rotate="0" mirrorx="No" mirrory="No" />
+        <Vol_TiltB_A Name="Vol_TiltB_A" className="Volume" x="254.999969482421875" y="278" rotate="0" mirrorx="No" mirrory="No" />
+        <Vol_TiltB_B Name="Vol_TiltB_B" className="Volume" x="311.99993896484375" y="329" rotate="0" mirrorx="No" mirrory="No" />
+        <Pressure_Valve Name="Pressure_Valve" className="PV" x="625" y="293" rotate="0" mirrorx="No" mirrory="No" />
+        <DSG-7_DQ200 Name="DSG-7_DQ200" className="Pump" x="748" y="199" rotate="0" mirrorx="No" mirrory="No" />
+      </Elements>
+    </Hydr1>
+  </Schematics>
+</DMInputFile>

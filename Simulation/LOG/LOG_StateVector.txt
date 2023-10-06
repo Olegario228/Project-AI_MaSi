@@ -1,0 +1,66 @@
+h[0] = Ground_UnderCarriage.z0 = 0.000000
+h[1] = Ground_UnderCarriage.z1 = 0.000000
+h[2] = Ground_UnderCarriage.z2 = 0.000000
+h[3] = Ground_UnderCarriage.z3 = 1.000000
+h[4] = Ground_UnderCarriage.z4 = 0.000000
+h[5] = Ground_UnderCarriage.z5 = 0.000000
+h[6] = Ground_UnderCarriage.z6 = 0.000000
+h[7] = UpperCarriage_LiftBoom.z0 = 0.000000
+h[8] = LiftBoom_TiltBoom.z0 = 0.000000
+h[9] = TiltBoom_ArmEnd.z0 = 0.000000
+h[10] = Arm_End_X_Link.z0 = 0.000000
+h[11] = Tilt_Arm_X_Link.z0 = 0.000000
+h[12] = GripperBase1_Gripper1.z0 = 0.000000
+h[13] = Gripper1_GripperLink.z0 = 0.000000
+h[14] = Gripper2_GripperLink.z0 = 0.000000
+h[15] = Ground_Cube.z0 = 0.000000
+h[16] = Ground_Cube.z1 = 0.000000
+h[17] = Ground_Cube.z2 = 0.000000
+h[18] = Ground_Cube.z3 = 1.000000
+h[19] = Ground_Cube.z4 = 0.000000
+h[20] = Ground_Cube.z5 = 0.000000
+h[21] = Ground_Cube.z6 = 0.000000
+h[22] = Ground_UnderCarriage.zd0 = 0.000000
+h[23] = Ground_UnderCarriage.zd1 = 0.000000
+h[24] = Ground_UnderCarriage.zd2 = 0.000000
+h[25] = Ground_UnderCarriage.zd3 = 0.000000
+h[26] = Ground_UnderCarriage.zd4 = 0.000000
+h[27] = Ground_UnderCarriage.zd5 = 0.000000
+h[28] = UpperCarriage_LiftBoom.zd0 = 0.000000
+h[29] = LiftBoom_TiltBoom.zd0 = 0.000000
+h[30] = TiltBoom_ArmEnd.zd0 = 0.000000
+h[31] = Arm_End_X_Link.zd0 = 0.000000
+h[32] = Tilt_Arm_X_Link.zd0 = 0.000000
+h[33] = GripperBase1_Gripper1.zd0 = 0.000000
+h[34] = Gripper1_GripperLink.zd0 = 0.000000
+h[35] = Gripper2_GripperLink.zd0 = 0.000000
+h[36] = Ground_Cube.zd0 = 0.000000
+h[37] = Ground_Cube.zd1 = 0.000000
+h[38] = Ground_Cube.zd2 = 0.000000
+h[39] = Ground_Cube.zd3 = 0.000000
+h[40] = Ground_Cube.zd4 = 0.000000
+h[41] = Ground_Cube.zd5 = 0.000000
+Number of differential equations 10 -------
+Tyres --------------------------------------
+Motors -------------------------------------
+Pressures ----------------------------------
+h[42] =Vol_Pump.p = 3000000.000000
+h[43] =Vol_Tank.p = 0.000000
+h[44] =Vol_LiftB_A.p = 3000000.000000
+h[45] =Vol_LiftB_B.p = 3000000.000000
+h[46] =Vol_TiltB_A.p = 3000000.000000
+h[47] =Vol_TiltB_B.p = 3000000.000000
+h[48] =Vol_TiltA_A.p = 3000000.000000
+h[49] =Vol_TiltA_B.p = 3000000.000000
+h[50] =Vol_Gripper_A.p = 3000000.000000
+h[51] =Vol_Gripper_B.p = 3000000.000000
+Hydraulic motors ---------------------------
+2/2 Valves ---------------------------------
+PVG32 Valves ----------------------
+L90LS Valves ----------------------
+D1VW Valves ----------------------
+Pressure Compensated Proportional Valves ---
+M4-15 Valves ----------------------
+M200LS Valves ----------------------
+Bosch Rexroth MHRB Valves ----------
+Bucher CINDY Valves ----------------

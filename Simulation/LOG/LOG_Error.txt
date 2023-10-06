@@ -1,0 +1,3 @@
+
+Position warning of constraint Gripper1_GripperLink component Y-coordinate is -6.4282032302755052 mm. Please check the constraint definition.
+See LOG/LOG_Model.txt Constraints for more information.

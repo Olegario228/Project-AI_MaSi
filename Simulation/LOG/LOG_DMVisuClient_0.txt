@@ -1,0 +1,7 @@
+11:59:47: DMClient started, nSolvers=0, solverID=1002
+11:59:47: Allocating memory for message vectors, m_nkpl=-1, m_nvis=-1, size=1344
+11:59:47: ID 1002, sending pdu 1002 
+11:59:47: filename: C:\Users\sh24000\OneDrive - Savonia-ammattikorkeakoulu\Tiedostot\MeVEA\Test Project-Ai-MaSi\Simulation\Ai-Masi_V0.08.mvs, length 120
+11:59:51: Simulation started...
+11:59:55: DMClient destr, nSolvers=0, solverID=1002
+11:59:55: DMClient in destructor

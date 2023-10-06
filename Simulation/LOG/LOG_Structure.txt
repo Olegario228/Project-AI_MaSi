@@ -1,0 +1,42 @@
+
+Model: New Project
+
+Number of bodies: 12
+
+Number of generalized coordinates: 72
+
+Number of joint coordinates: 20
+
+Number of constraint equations: 15
+
+--------------------------------------------
+
+Number of DOFs: 5
+
+Number of RDOFs: 5
+
+Number of FDOFs: 0
+
+--------------------------------------------
+
+Number of entries of Cq rows 15 x cols 72 = 1080
+
+Number of NZ entries: 108
+
+NNZ / N entries of Cq: 10.00 %
+
+--------------------------------------------
+
+Number of entries of R rows 72 x cols 20 = 1440
+
+Number of NZ entries: 180
+
+NNZ / N entries of R: 12.50 %
+
+--------------------------------------------
+
+Number of entries of M rows 72 x cols 72 = 5184
+
+Number of NZ entries: 360
+
+NNZ / N entries of M:  6.94 %

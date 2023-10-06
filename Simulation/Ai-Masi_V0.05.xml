@@ -1,0 +1,1441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <Model Name="New Project" Method="Recursive" Integrator="Runge-Kutta 4" SparseSolver="No" dt="0.001" tstop="3e4" hydrIntMethod="Numeric solver" numHydrIntegr="10" Oil_B0="1.6e9" enableCavitation="Yes" update_frequency="60" computeJointForces="No" error="1.0e-5" nGSIterations="3" logoImageName="">
+    <Gravitation x="0" y="-9.81" z="0" />
+  </Model>
+  <MevPacker baseDir="" additionalDirs="" skipDirs="" files="" password="" modelId="0" modelIdString="Default" />
+  <Frictions>
+    <TestFriction Name="TestFriction" assembly="" Fn="1e4" s0="1e5" s1="5000" v0="0.05" c="6000" myys="1" myyd="0.7" e="2" />
+  </Frictions>
+  <Bodies>
+    <Ground assembly="" BodyType="Rigid" RelTo="Ground" RelToCS="" VisualizationGraphics="Ground_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" FlexFile="" Modes="" Damping="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No" AnsysSource="" VisSource="" VisModes="">
+      <Position x="0" y="-0.1" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="10">
+        <I Ixx="1" Iyy="1" Izz="1" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+      <CS>
+        <Origo Node="0" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo>
+        <Under_Carriage Node="-1" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Under_Carriage>
+      </CS>
+    </Ground>
+    <Under_Carriage assembly="" BodyType="Rigid" RelTo="Ground" RelToCS="Ground.Under_Carriage" VisualizationGraphics="Under_Carriage_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" FlexFile="" Modes="" Damping="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No" AnsysSource="" VisSource="" VisModes="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="3.4187">
+        <I Ixx="0.02467" Iyy="0.047614" Izz="0.02529" Ixy="0.000209" Izx="-0.000114" Iyz="1.6e-5" />
+        <CM x="-0.00653" y="-0.04107" z="-0.00021" />
+        <CMI x="-0.00653038" y="-0.04107178" z="-0.00021304" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+      <CS>
+        <Origo Node="0" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo>
+        <DriveL Node="0" VisOptions="">
+          <Position x="0.155" y="-0.048" z="0.099" />
+          <Orientation rx="0" ry="0" rz="0" />
+          <CS>
+            <RollerL Node="0" VisOptions="">
+              <Position x="-0.3145" y="0.001" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </RollerL>
+            <GuideRollerL1 Node="0" VisOptions="">
+              <Position x="-0.049" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerL1>
+            <GuideRollerL2 Node="0" VisOptions="">
+              <Position x="-0.08" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerL2>
+            <GuideRollerL3 Node="0" VisOptions="">
+              <Position x="-0.11" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerL3>
+            <GuideRollerL4 Node="0" VisOptions="">
+              <Position x="-0.141" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerL4>
+            <GuideRollerL5 Node="0" VisOptions="">
+              <Position x="-0.171" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerL5>
+            <GuideRollerL6 Node="0" VisOptions="">
+              <Position x="-0.202" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerL6>
+            <GuideRollerL7 Node="0" VisOptions="">
+              <Position x="-0.232" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerL7>
+            <GuideRollerL8 Node="0" VisOptions="">
+              <Position x="-0.263" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerL8>
+            <GuideRollerTopL1 Node="0" VisOptions="">
+              <Position x="-0.11" y="0.039" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerTopL1>
+            <GuideRollerTopL2 Node="0" VisOptions="">
+              <Position x="-0.198" y="0.039" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerTopL2>
+          </CS>
+        </DriveL>
+        <DriveR Node="0" VisOptions="">
+          <Position x="0.155" y="-0.05" z="-0.099" />
+          <Orientation rx="0" ry="0" rz="0" />
+          <CS>
+            <RollerR Node="0" VisOptions="">
+              <Position x="-0.3145" y="0.001" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </RollerR>
+            <GuideRollerR1 Node="0" VisOptions="">
+              <Position x="-0.049" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerR1>
+            <GuideRollerR2 Node="0" VisOptions="">
+              <Position x="-0.08" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerR2>
+            <GuideRollerR3 Node="0" VisOptions="">
+              <Position x="-0.11" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerR3>
+            <GuideRollerR4 Node="0" VisOptions="">
+              <Position x="-0.141" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerR4>
+            <GuideRollerR5 Node="0" VisOptions="">
+              <Position x="-0.171" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerR5>
+            <GuideRollerR6 Node="0" VisOptions="">
+              <Position x="-0.202" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerR6>
+            <GuideRollerR7 Node="0" VisOptions="">
+              <Position x="-0.232" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerR7>
+            <GuideRollerR8 Node="0" VisOptions="">
+              <Position x="-0.263" y="-0.018" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerR8>
+            <GuideRollerTopR1 Node="0" VisOptions="">
+              <Position x="-0.11" y="0.039" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerTopR1>
+            <GuideRollerTopR2 Node="0" VisOptions="">
+              <Position x="-0.198" y="0.039" z="0" />
+              <Orientation rx="0" ry="0" rz="0" />
+            </GuideRollerTopR2>
+          </CS>
+        </DriveR>
+        <GroundOrigo Node="0" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </GroundOrigo>
+        <OrigoRot Node="-1" VisOptions="">
+          <Position x="0" y="0.002" z="0" />
+          <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+        </OrigoRot>
+      </CS>
+    </Under_Carriage>
+    <Upper_Carriage assembly="" BodyType="Rigid" RelTo="Under_Carriage" RelToCS="Under_Carriage.Origo" VisualizationGraphics="Upper_Carrige_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" FlexFile="" Modes="" Damping="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No" AnsysSource="" VisSource="" VisModes="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="6">
+        <I Ixx="0.1036" Iyy="0.1432" Izz="0.0692" Ixy="0.0015" Izx="0.0085" Iyz="0.0012" />
+        <CM x="-0.0848" y="0.05412" z="-0.0165" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+      <CS>
+        <Origo Node="-1" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo>
+        <OrigoRot Node="-1" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+        </OrigoRot>
+        <Origo_LiftBoom Node="-1" VisOptions="">
+          <Position x="0.017" y="0.079" z="0" />
+          <Orientation rx="0" ry="0" rz="1.0471975511965976313" />
+        </Origo_LiftBoom>
+        <OrigoLiftCyl1 Node="-1" VisOptions="">
+          <Position x="0.062" y="0.027" z="0.03" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </OrigoLiftCyl1>
+        <OrigoLiftCyl2 Node="-1" VisOptions="">
+          <Position x="0.062" y="0.027" z="-0.03" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </OrigoLiftCyl2>
+      </CS>
+    </Upper_Carriage>
+    <Lift_Boom assembly="" BodyType="Rigid" RelTo="Upper_Carriage" RelToCS="Upper_Carriage.Origo_LiftBoom" VisualizationGraphics="Lift_Boom_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" FlexFile="" Modes="" Damping="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No" AnsysSource="" VisSource="" VisModes="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="1.1">
+        <I Ixx="0.006" Iyy="0.018" Izz="0.024" Ixy="-0.008" Izx="0" Iyz="0" />
+        <CM x="0.2038" y="-0.044" z="7.8e-5" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+      <CS>
+        <Origo_TiltB Node="-1" VisOptions="">
+          <Position x="0.42" y="-0.206" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo_TiltB>
+        <OrigoLiftCyl1 Node="-1" VisOptions="">
+          <Position x="0.203" y="-0.011" z="0.03" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </OrigoLiftCyl1>
+        <OrigoLiftCyl2 Node="-1" VisOptions="">
+          <Position x="0.203" y="-0.011" z="-0.03" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </OrigoLiftCyl2>
+        <OrigoTiltCyl Node="-1" VisOptions="">
+          <Position x="0.27" y="-0.008" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </OrigoTiltCyl>
+        <Origo Node="-1" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo>
+      </CS>
+    </Lift_Boom>
+    <Tilt_Boom assembly="" BodyType="Rigid" RelTo="Lift_Boom" RelToCS="Lift_Boom.Origo_TiltB" VisualizationGraphics="Tilt_Boom_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" FlexFile="" Modes="" Damping="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No" AnsysSource="" VisSource="" VisModes="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.776">
+        <I Ixx="0.00028" Iyy="0.00594" Izz="0.006" Ixy="3.3e-5" Izx="2.3e-6" Iyz="0" />
+        <CM x="-0.0635" y="-0.026" z="6.125e-5" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+      <CS>
+        <Origo Node="-1" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo>
+        <OrigoTiltCyl Node="-1" VisOptions="">
+          <Position x="0.068" y="-0.02" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </OrigoTiltCyl>
+        <OrigoArmCyl Node="-1" VisOptions="">
+          <Position x="-0.014" y="-0.063" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </OrigoArmCyl>
+        <OrigoTiltArm Node="-1" VisOptions="">
+          <Position x="-0.203" y="-0.028" z="0" />
+          <Orientation rx="0" ry="0" rz="-1.570796326794896558" />
+        </OrigoTiltArm>
+        <OrigoArmEnd Node="-1" VisOptions="">
+          <Position x="-0.248" y="-0.03" z="0" />
+          <Orientation rx="0" ry="0" rz="-1.570796326794896558" />
+        </OrigoArmEnd>
+      </CS>
+    </Tilt_Boom>
+    <Arm_End assembly="" BodyType="Rigid" RelTo="Tilt_Boom" RelToCS="Tilt_Boom.OrigoArmEnd" VisualizationGraphics="Arm_End_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" FlexFile="" Modes="" Damping="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No" AnsysSource="" VisSource="" VisModes="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.273">
+        <I Ixx="0.00014643" Iyy="0.00011905" Izz="0.00012252" Ixy="1.8e-5" Izx="2.0e-8" Iyz="2.0e-8" />
+        <CM x="-0.01800541" y="-0.02988011" z="1.076e-5" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+      <CS>
+        <Origo Node="-1" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo>
+        <Origo2 Node="-1" VisOptions="">
+          <Position x="0.041" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo2>
+        <OrigoRotate Node="-1" VisOptions="">
+          <Position x="0.036" y="-0.066" z="0" />
+          <Orientation rx="1.570796326794896558" ry="0" rz="0" />
+        </OrigoRotate>
+      </CS>
+    </Arm_End>
+    <Tilt_Arm assembly="" BodyType="Rigid" RelTo="Tilt_Boom" RelToCS="Tilt_Boom.OrigoTiltArm" VisualizationGraphics="Tilt_Arm_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" FlexFile="" Modes="" Damping="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No" AnsysSource="" VisSource="" VisModes="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.0507">
+        <I Ixx="1.674e-5" Iyy="3.257e-5" Izz="1.683e-5" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0.01856407" y="-4.387e-5" z="0" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+      <CS>
+        <Origo Node="-1" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo>
+        <Origo2 Node="-1" VisOptions="">
+          <Position x="0.046" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo2>
+      </CS>
+    </Tilt_Arm>
+    <X_Link assembly="" BodyType="Rigid" RelTo="Arm_End" RelToCS="Arm_End.Origo2" VisualizationGraphics="X_Link_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" FlexFile="" Modes="" Damping="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No" AnsysSource="" VisSource="" VisModes="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.1067">
+        <I Ixx="5.691e-5" Iyy="1.376e-5" Izz="4.545e-5" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0.02373" z="0" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+      <CS>
+        <Origo Node="-1" VisOptions="">
+          <Position x="0" y="0.049" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo>
+        <Origo2 Node="-1" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo2>
+      </CS>
+    </X_Link>
+    <Gripper_Base assembly="" BodyType="Rigid" RelTo="Arm_End" RelToCS="Arm_End.OrigoRotate" VisualizationGraphics="Gripper_Base_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" FlexFile="" Modes="" Damping="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No" AnsysSource="" VisSource="" VisModes="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.02601038">
+        <I Ixx="1.905e-5" Iyy="1.124e-5" Izz="2.02e-5" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="-0.00329875" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+      <CS>
+        <OrigoRotate Node="-1" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </OrigoRotate>
+        <OrigoGrip1 Node="-1" VisOptions="">
+          <Position x="0.025" y="0" z="0.0195" />
+          <Orientation rx="1.570796326794896558" ry="0" rz="0" />
+        </OrigoGrip1>
+        <OrigoGrip2 Node="-1" VisOptions="">
+          <Position x="-0.025" y="0" z="0.0195" />
+          <Orientation rx="1.570796326794896558" ry="0" rz="0" />
+        </OrigoGrip2>
+      </CS>
+    </Gripper_Base>
+    <Gripper_1 assembly="" BodyType="Rigid" RelTo="Gripper_Base" RelToCS="Gripper_Base.OrigoGrip1" VisualizationGraphics="Gripper_2_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" FlexFile="" Modes="" Damping="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No" AnsysSource="" VisSource="" VisModes="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.2156">
+        <I Ixx="0.00028353" Iyy="0.00051304" Izz="0.00041295" Ixy="0.0001086" Izx="1.0e-8" Iyz="1.3e-7" />
+        <CM x="0.03283448" y="0.00592076" z="0.00019359" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+      <CS>
+        <OrigoRot Node="-1" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </OrigoRot>
+        <Origo1Cyl1_19mm Node="-1" VisOptions="">
+          <Position x="-0.002" y="-0.013" z="-0.015" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo1Cyl1_19mm>
+        <Origo2Cyl2_19mm Node="-1" VisOptions="">
+          <Position x="-0.002" y="-0.013" z="0.015" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo2Cyl2_19mm>
+        <Origo_GripperLink Node="-1" VisOptions="">
+          <Position x="-0.011" y="0.003" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo_GripperLink>
+      </CS>
+    </Gripper_1>
+    <Gripper_2 assembly="" BodyType="Rigid" RelTo="Gripper_Base" RelToCS="Gripper_Base.OrigoGrip2" VisualizationGraphics="Gripper_1_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" FlexFile="" Modes="" Damping="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No" AnsysSource="" VisSource="" VisModes="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.2156">
+        <I Ixx="0.00027597" Iyy="0.00028063" Izz="0.000173" Ixy="-6.669e-5" Izx="-1.36e-6" Iyz="1.2e-7" />
+        <CM x="-0.03283448" y="0.00592076" z="-0.00019359" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+      <CS>
+        <OrigoRot Node="-1" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </OrigoRot>
+        <Origo2Cyl1_19mm Node="-1" VisOptions="">
+          <Position x="0.002" y="-0.013" z="-0.015" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo2Cyl1_19mm>
+        <Origo1Cyl2_19mm Node="-1" VisOptions="">
+          <Position x="0.002" y="-0.013" z="0.015" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo1Cyl2_19mm>
+        <Origo_GripperLink Node="-1" VisOptions="">
+          <Position x="0.003" y="0.011" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo_GripperLink>
+      </CS>
+    </Gripper_2>
+    <GripperLink assembly="" BodyType="Rigid" RelTo="Gripper_2" RelToCS="Gripper_2.Origo_GripperLink" VisualizationGraphics="GripperLink_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" FlexFile="" Modes="" Damping="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No" AnsysSource="" VisSource="" VisModes="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.0037">
+        <I Ixx="2.0e-8" Iyy="4.8e-7" Izz="4.9e-7" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0.0175" y="0.0020034" z="0" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+      <CS>
+        <Origo2 Node="-1" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo2>
+        <Origo1 Node="-1" VisOptions="">
+          <Position x="0.035" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo1>
+      </CS>
+    </GripperLink>
+    <DriveG_L assembly="" BodyType="Rigid" RelTo="Under_Carriage" RelToCS="Under_Carriage.DriveL" VisualizationGraphics="" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" FlexFile="" Modes="" Damping="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No" AnsysSource="" VisSource="" VisModes="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0">
+        <I Ixx="1" Iyy="1" Izz="1" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+      <CS>
+        <Origo Node="-1" VisOptions="">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </Origo>
+      </CS>
+    </DriveG_L>
+  </Bodies>
+  <Dummies>
+    <Cyl92mm_R_Body assembly="" DumType="B2BF" RelTo="ForceT_LiftB_C1" RelToCS="" DumNode="-1" DumInd="1" VisualizationGraphics="Cyl92mm_Body_R_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" scriptName="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.036">
+        <I Ixx="0" Iyy="8.0e-5" Izz="7.0e-5" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0.0681" y="0.0053" z="-0.0029" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+    </Cyl92mm_R_Body>
+    <Cyl92mm_L_Body assembly="" DumType="B2BF" RelTo="ForceT_LiftB_C2" RelToCS="" DumNode="-1" DumInd="1" VisualizationGraphics="Cyl92mm_Body_L_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" scriptName="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.036">
+        <I Ixx="0" Iyy="8.0e-5" Izz="7.0e-5" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0.0681" y="0.0053" z="0.0029" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+    </Cyl92mm_L_Body>
+    <Cyl92mm_R_Rod assembly="" DumType="B2BF" RelTo="ForceT_LiftB_C1" RelToCS="" DumNode="-1" DumInd="2" VisualizationGraphics="Cyl92mm_Rod_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" scriptName="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.07">
+        <I Ixx="0" Iyy="0.00015" Izz="0.00015" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="-0.063" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+    </Cyl92mm_R_Rod>
+    <Cyl92mm_L_Rod assembly="" DumType="B2BF" RelTo="ForceT_LiftB_C2" RelToCS="" DumNode="-1" DumInd="2" VisualizationGraphics="Cyl92mm_Rod_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" scriptName="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.07">
+        <I Ixx="0" Iyy="0.00015" Izz="0.00015" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="-0.063" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+    </Cyl92mm_L_Rod>
+    <Cyl125mm_Body assembly="" DumType="B2BF" RelTo="ForceT_TiltB_C" RelToCS="" DumNode="-1" DumInd="1" VisualizationGraphics="Cyl125mm_Body_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" scriptName="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.175">
+        <I Ixx="0" Iyy="0.0007" Izz="0.0007" Ixy="0" Izx="0" Iyz="0.0007" />
+        <CM x="0.0937" y="0.0012" z="0.0002" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+    </Cyl125mm_Body>
+    <Cyl125mm_Rod assembly="" DumType="B2BF" RelTo="ForceT_TiltB_C" RelToCS="" DumNode="-1" DumInd="2" VisualizationGraphics="Cyl125mm_Rod_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" scriptName="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.082">
+        <I Ixx="0" Iyy="0.0003" Izz="0.0003" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="-0.0795" y="0.0002" z="-0.0063" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+    </Cyl125mm_Rod>
+    <Cyl80mm_Body assembly="" DumType="B2BF" RelTo="ForceT_TiltA_C" RelToCS="" DumNode="-1" DumInd="1" VisualizationGraphics="Cyl80mm_Body_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" scriptName="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.1505">
+        <I Ixx="9.06e-6" Iyy="0.00036251" Izz="0.00036015" Ixy="0" Izx="-2.16e-6" Iyz="0" />
+        <CM x="0.06946891" y="0" z="-0.0009873" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+    </Cyl80mm_Body>
+    <Cyl80mm_Rod assembly="" DumType="B2BF" RelTo="ForceT_TiltA_C" RelToCS="" DumNode="-1" DumInd="2" VisualizationGraphics="Cyl80mm_Rod_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" scriptName="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.0645">
+        <I Ixx="9.8e-7" Iyy="0.00011954" Izz="0.00011968" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="-0.05706945" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+    </Cyl80mm_Rod>
+    <Cyl1_Gripper_Body assembly="" DumType="B2BF" RelTo="ForceT_Gripper_Cyl1" RelToCS="" DumNode="-1" DumInd="1" VisualizationGraphics="Cyl19mm_Body_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" scriptName="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.041">
+        <I Ixx="1.34e-6" Iyy="1.133e-5" Izz="1.136e-5" Ixy="0" Izx="4.0e-8" Iyz="0" />
+        <CM x="0.02202139" y="0" z="5.614e-5" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+    </Cyl1_Gripper_Body>
+    <Cyl2_Gripper_Body assembly="" DumType="B2BF" RelTo="ForceT_Gripper_Cyl2" RelToCS="" DumNode="-1" DumInd="1" VisualizationGraphics="Cyl19mm_Body_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" scriptName="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.041">
+        <I Ixx="1.34e-6" Iyy="1.133e-5" Izz="1.136e-5" Ixy="0" Izx="4.0e-8" Iyz="0" />
+        <CM x="0.02202139" y="0" z="5.614e-5" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+    </Cyl2_Gripper_Body>
+    <Cyl1_Gripper_Rod assembly="" DumType="B2BF" RelTo="ForceT_Gripper_Cyl1" RelToCS="" DumNode="-1" DumInd="2" VisualizationGraphics="Cyl19mm_Rod_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" scriptName="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.0147">
+        <I Ixx="1.1e-7" Iyy="4.79e-6" Izz="4.81e-6" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="-0.0243961" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+    </Cyl1_Gripper_Rod>
+    <Cyl2_Gripper_Rod assembly="" DumType="B2BF" RelTo="ForceT_Gripper_Cyl2" RelToCS="" DumNode="-1" DumInd="2" VisualizationGraphics="Cyl19mm_Rod_Graphics" CollisionGraphics="" bodyDefinitionFile="" inertiaInCM="Yes" scriptName="" ColLayer="" ColIgnores="" VisOptions="" UsePF="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0.0147">
+        <I Ixx="1.1e-7" Iyy="4.79e-6" Izz="4.81e-6" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="-0.0243961" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+        <CMIorientation rx="0" ry="0" rz="0" />
+      </Inertia>
+    </Cyl2_Gripper_Rod>
+  </Dummies>
+  <Constraints>
+    <Ground_UnderCarriage assembly="" Type="0" Active="Yes" activateInPlace="Yes" CutJoint="No" Body1="Ground" Body1CS="Ground.Origo" NodeBody1="0" Body2="Under_Carriage" Body2CS="Under_Carriage.GroundOrigo" NodeBody2="0" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="0" y="0" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="-0" z="1" />
+      <uc x="-0" y="1" z="0" />
+      <ud x="-0" y="1" z="0" />
+    </Ground_UnderCarriage>
+    <UnderCarriage_UpperCarriage assembly="" Type="7" Active="Yes" activateInPlace="Yes" CutJoint="No" Body1="Under_Carriage" Body1CS="Under_Carriage.OrigoRot" NodeBody1="-1" Body2="Upper_Carriage" Body2CS="Upper_Carriage.OrigoRot" NodeBody2="-1" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="0" y="0.002" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="-0" />
+      <ub x="0" y="1" z="6.1232339957367660359e-17" />
+      <uc x="-0" y="6.1232339957367660359e-17" z="-1" />
+      <ud x="-0" y="6.1232339957367660359e-17" z="-1" />
+    </UnderCarriage_UpperCarriage>
+    <UpperCarriage_LiftBoom assembly="" Type="3" Active="Yes" activateInPlace="Yes" CutJoint="No" Body1="Upper_Carriage" Body1CS="Upper_Carriage.Origo_LiftBoom" NodeBody1="-1" Body2="Lift_Boom" Body2CS="Lift_Boom.Origo" NodeBody2="-1" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="0.017" y="0.079" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="0.5" y="0.86602540378443859659" z="0" />
+      <ub x="0" y="-0" z="1" />
+      <uc x="-0.86602540378443859659" y="0.5" z="0" />
+      <ud x="0" y="1" z="0" />
+    </UpperCarriage_LiftBoom>
+    <LiftBoom_TiltBoom assembly="" Type="3" Active="Yes" activateInPlace="Yes" CutJoint="No" Body1="Lift_Boom" Body1CS="Lift_Boom.Origo_TiltB" NodeBody1="-1" Body2="Tilt_Boom" Body2CS="Tilt_Boom.Origo" NodeBody2="-1" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="0.42" y="-0.206" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="-0" z="1" />
+      <uc x="-0" y="1" z="0" />
+      <ud x="0" y="1" z="0" />
+    </LiftBoom_TiltBoom>
+    <TiltBoom_ArmEnd assembly="" Type="3" Active="Yes" activateInPlace="Yes" CutJoint="No" Body1="Tilt_Boom" Body1CS="Tilt_Boom.OrigoArmEnd" NodeBody1="-1" Body2="Arm_End" Body2CS="Arm_End.Origo" NodeBody2="-1" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="-0.248" y="-0.03" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="6.1232339957367660359e-17" y="-1" z="-0" />
+      <ub x="0" y="-0" z="1" />
+      <uc x="1" y="6.1232339957367660359e-17" z="0" />
+      <ud x="0" y="1" z="0" />
+    </TiltBoom_ArmEnd>
+    <TiltBoom_TiltArm assembly="" Type="3" Active="Yes" activateInPlace="Yes" CutJoint="Yes" Body1="Tilt_Arm" Body1CS="Tilt_Arm.Origo" NodeBody1="-1" Body2="Tilt_Boom" Body2CS="Tilt_Boom.OrigoTiltArm" NodeBody2="-1" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="0" y="0" z="0" />
+      <Position2 x="-0.203" y="-0.028" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="-0" z="1" />
+      <uc x="-0" y="1" z="0" />
+      <ud x="1" y="0" z="0" />
+    </TiltBoom_TiltArm>
+    <Arm_End_X_Link assembly="" Type="3" Active="Yes" activateInPlace="Yes" CutJoint="No" Body1="Arm_End" Body1CS="Arm_End.Origo2" NodeBody1="-1" Body2="X_Link" Body2CS="X_Link.Origo2" NodeBody2="-1" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="0.041" y="0" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="-0" z="1" />
+      <uc x="-0" y="1" z="0" />
+      <ud x="0" y="1" z="0" />
+    </Arm_End_X_Link>
+    <Tilt_Arm_X_Link assembly="" Type="3" Active="Yes" activateInPlace="Yes" CutJoint="No" Body1="X_Link" Body1CS="X_Link.Origo" NodeBody1="-1" Body2="Tilt_Arm" Body2CS="Tilt_Arm.Origo2" NodeBody2="-1" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="0" y="0.049" z="0" />
+      <Position2 x="0.046" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="-0" z="1" />
+      <uc x="-0" y="1" z="0" />
+      <ud x="0" y="1" z="0" />
+    </Tilt_Arm_X_Link>
+    <ArmEnd_TiltBoom assembly="" Type="3" Active="Yes" activateInPlace="Yes" CutJoint="Yes" Body1="Arm_End" Body1CS="Arm_End.Origo" NodeBody1="-1" Body2="Tilt_Boom" Body2CS="Tilt_Boom.OrigoArmEnd" NodeBody2="-1" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="0" y="0" z="0" />
+      <Position2 x="-0.248" y="-0.03" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="-0" z="1" />
+      <uc x="-0" y="1" z="0" />
+      <ud x="0" y="1" z="0" />
+    </ArmEnd_TiltBoom>
+    <ArmEnd_GripperBase assembly="" Type="7" Active="Yes" activateInPlace="Yes" CutJoint="No" Body1="Arm_End" Body1CS="Arm_End.OrigoRotate" NodeBody1="-1" Body2="Gripper_Base" Body2CS="Gripper_Base.OrigoRotate" NodeBody2="-1" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="0.036" y="-0.066" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="-0" z="1" />
+      <uc x="-0" y="6.1232339957367660359e-17" z="1" />
+      <ud x="-0" y="1" z="0" />
+    </ArmEnd_GripperBase>
+    <GripperBase1_Gripper1 assembly="" Type="3" Active="Yes" activateInPlace="Yes" CutJoint="No" Body1="Gripper_Base" Body1CS="Gripper_Base.OrigoGrip1" NodeBody1="-1" Body2="Gripper_1" Body2CS="Gripper_1.OrigoRot" NodeBody2="-1" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="0.025" y="0" z="0.0195" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="-0" z="1" />
+      <uc x="-0" y="6.1232339957367660359e-17" z="1" />
+      <ud x="0" y="1" z="0" />
+    </GripperBase1_Gripper1>
+    <GripperBase2_Gripper2 assembly="" Type="3" Active="Yes" activateInPlace="Yes" CutJoint="Yes" Body1="Gripper_2" Body1CS="Gripper_2.OrigoRot" NodeBody1="-1" Body2="Gripper_Base" Body2CS="Gripper_Base.OrigoGrip2" NodeBody2="-1" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="0" y="0" z="0" />
+      <Position2 x="-0.025" y="0" z="0.0195" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="-1" z="6.1232339957367660359e-17" />
+      <uc x="-0" y="1" z="0" />
+      <ud x="0" y="6.1232339957367660359e-17" z="1" />
+    </GripperBase2_Gripper2>
+    <Gripper1_GripperLink assembly="" Type="3" Active="Yes" activateInPlace="Yes" CutJoint="No" Body1="Gripper_1" Body1CS="Gripper_1.Origo_GripperLink" NodeBody1="-1" Body2="GripperLink" Body2CS="GripperLink.Origo1" NodeBody2="-1" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="-0.011" y="0.003" z="0" />
+      <Position2 x="0.035" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="-0" z="1" />
+      <uc x="-0" y="1" z="0" />
+      <ud x="0" y="1" z="0" />
+    </Gripper1_GripperLink>
+    <Gripper2_GripperLink assembly="" Type="3" Active="Yes" activateInPlace="Yes" CutJoint="No" Body1="GripperLink" Body1CS="GripperLink.Origo2" NodeBody1="-1" Body2="Gripper_2" Body2CS="Gripper_2.Origo_GripperLink" NodeBody2="-1" ControlSignal="" PathNodeIndices="" d0="0" FricName="" JointLength="0" JointDiameter="0" UsePF="No">
+      <Position1 x="0" y="0" z="0" />
+      <Position2 x="0.003" y="0.011" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="-0" z="1" />
+      <uc x="-0" y="1" z="0" />
+      <ud x="0" y="1" z="0" />
+    </Gripper2_GripperLink>
+  </Constraints>
+  <Forces>
+    <B2BM>
+      <ForceR_CrawlerL assembly="" Body1="Under_Carriage" Body1CS="Under_Carriage.DriveL" NodeBody1="0" Body2="DriveG_L" Body2CS="DriveG_L.Origo" NodeBody2="0" Input="" ControlSignalL="" ControlSignalT="" ControlSignalLd="" K="0" C="0" Kend="0" Cend="0" Theta0="0" Thetamin="0" Thetamax="0" M="0" FricName="">
+        <fi x="0" y="0" z="1" />
+        <gi x="0" y="1" z="0" />
+        <fj x="0" y="0" z="1" />
+      </ForceR_CrawlerL>
+    </B2BM>
+    <B2BF>
+      <ForceT_LiftB_C1 assembly="" Body1="Upper_Carriage" Body1CS="Upper_Carriage.OrigoLiftCyl1" NodeBody1="0" Body2="Lift_Boom" Body2CS="Lift_Boom.OrigoLiftCyl1" NodeBody2="0" Input="" ControlSignalL="" ControlSignalF="" ControlSignalLd="" K="0" C="0" Kend="0" Cend="0" L0="0" Lmin="0" Lmax="0" F="0" IsRope="No" FricName="" KSplName="" CSplName="" CSplHName="">
+        <Position1 x="0" y="0" z="0" />
+        <Position2 x="0" y="0" z="0" />
+      </ForceT_LiftB_C1>
+      <ForceT_LiftB_C2 assembly="" Body1="Upper_Carriage" Body1CS="Upper_Carriage.OrigoLiftCyl2" NodeBody1="0" Body2="Lift_Boom" Body2CS="Lift_Boom.OrigoLiftCyl2" NodeBody2="0" Input="" ControlSignalL="" ControlSignalF="" ControlSignalLd="" K="0" C="0" Kend="0" Cend="0" L0="0" Lmin="0" Lmax="0" F="0" IsRope="No" FricName="" KSplName="" CSplName="" CSplHName="">
+        <Position1 x="0" y="0" z="0" />
+        <Position2 x="0" y="0" z="0" />
+      </ForceT_LiftB_C2>
+      <ForceT_TiltB_C assembly="" Body1="Lift_Boom" Body1CS="Lift_Boom.OrigoTiltCyl" NodeBody1="0" Body2="Tilt_Boom" Body2CS="Tilt_Boom.OrigoTiltCyl" NodeBody2="0" Input="" ControlSignalL="" ControlSignalF="" ControlSignalLd="" K="0" C="0" Kend="0" Cend="0" L0="0" Lmin="0" Lmax="0" F="0" IsRope="No" FricName="" KSplName="" CSplName="" CSplHName="">
+        <Position1 x="0" y="0" z="0" />
+        <Position2 x="0" y="0" z="0" />
+      </ForceT_TiltB_C>
+      <ForceT_TiltA_C assembly="" Body1="Tilt_Boom" Body1CS="Tilt_Boom.OrigoArmCyl" NodeBody1="0" Body2="X_Link" Body2CS="X_Link.Origo" NodeBody2="0" Input="" ControlSignalL="" ControlSignalF="" ControlSignalLd="" K="0" C="0" Kend="0" Cend="0" L0="0" Lmin="0" Lmax="0" F="0" IsRope="No" FricName="" KSplName="" CSplName="" CSplHName="">
+        <Position1 x="0" y="0" z="0" />
+        <Position2 x="0" y="0" z="0" />
+      </ForceT_TiltA_C>
+      <ForceT_Gripper_Cyl1 assembly="" Body1="Gripper_2" Body1CS="Gripper_2.Origo2Cyl1_19mm" NodeBody1="0" Body2="Gripper_1" Body2CS="Gripper_1.Origo1Cyl1_19mm" NodeBody2="0" Input="" ControlSignalL="" ControlSignalF="" ControlSignalLd="" K="0" C="0" Kend="0" Cend="0" L0="0" Lmin="0" Lmax="0" F="0" IsRope="No" FricName="" KSplName="" CSplName="" CSplHName="">
+        <Position1 x="0" y="0" z="0" />
+        <Position2 x="0" y="0" z="0" />
+      </ForceT_Gripper_Cyl1>
+      <ForceT_Gripper_Cyl2 assembly="" Body1="Gripper_1" Body1CS="Gripper_1.Origo2Cyl2_19mm" NodeBody1="0" Body2="Gripper_2" Body2CS="Gripper_2.Origo1Cyl2_19mm" NodeBody2="0" Input="" ControlSignalL="" ControlSignalF="" ControlSignalLd="" K="0" C="0" Kend="0" Cend="0" L0="0" Lmin="0" Lmax="0" F="0" IsRope="No" FricName="" KSplName="" CSplName="" CSplHName="">
+        <Position1 x="0" y="0" z="0" />
+        <Position2 x="0" y="0" z="0" />
+      </ForceT_Gripper_Cyl2>
+    </B2BF>
+    <PowerTrain />
+    <Hydraulics>
+      <DV43>
+        <DV43_LiftB assembly="" mainSpool="0" ControlSignal="LiftBoom" nomInput="10" maxInput="10" posAOverlap="5" posBOverlap="-5" centreFlowCE="100" flowSplinePA="" QnomPA="0.3" dpnomPA="5" flowSplineAT="" QnomAT="0.3" dpnomAT="5" flowSplinePB="" QnomPB="0.3" dpnomPB="5" flowSplineBT="" QnomBT="0.3" dpnomBT="5" Qleak="0" dpleak="100" tau="0.1">
+          <Port_Volume port1="Vol_Pump" port2="Vol_LiftB_A" port3="Vol_LiftB_B" port4="Vol_Tank" />
+        </DV43_LiftB>
+        <DV43_TiltB assembly="" mainSpool="0" ControlSignal="TiltBoom" nomInput="10" maxInput="10" posAOverlap="5" posBOverlap="-5" centreFlowCE="100" flowSplinePA="" QnomPA="0.2" dpnomPA="5" flowSplineAT="" QnomAT="0.2" dpnomAT="5" flowSplinePB="" QnomPB="0.2" dpnomPB="5" flowSplineBT="" QnomBT="0.2" dpnomBT="5" Qleak="0" dpleak="100" tau="0.1">
+          <Port_Volume port1="Vol_Pump" port2="Vol_TiltB_A" port3="Vol_TiltB_B" port4="Vol_Tank" />
+        </DV43_TiltB>
+        <DV43_TiltA assembly="" mainSpool="0" ControlSignal="TiltArm" nomInput="10" maxInput="10" posAOverlap="5" posBOverlap="-5" centreFlowCE="100" flowSplinePA="" QnomPA="0.2" dpnomPA="5" flowSplineAT="" QnomAT="0.2" dpnomAT="5" flowSplinePB="" QnomPB="0.2" dpnomPB="5" flowSplineBT="" QnomBT="0.2" dpnomBT="5" Qleak="0" dpleak="100" tau="0.1">
+          <Port_Volume port1="Vol_Pump" port2="Vol_TiltA_A" port3="Vol_TiltA_B" port4="Vol_Tank" />
+        </DV43_TiltA>
+        <DV43_Gripper assembly="" mainSpool="0" ControlSignal="Gripper" nomInput="10" maxInput="10" posAOverlap="5" posBOverlap="-5" centreFlowCE="100" flowSplinePA="" QnomPA="0.2" dpnomPA="5" flowSplineAT="" QnomAT="0.2" dpnomAT="5" flowSplinePB="" QnomPB="0.2" dpnomPB="5" flowSplineBT="" QnomBT="0.2" dpnomBT="5" Qleak="0" dpleak="100" tau="0.1">
+          <Port_Volume port1="Vol_Pump" port2="Vol_Gripper_A" port3="Vol_Gripper_B" port4="Vol_Tank" />
+        </DV43_Gripper>
+        <DV43_ML assembly="" mainSpool="0" ControlSignal="" nomInput="10" maxInput="10" posAOverlap="5" posBOverlap="-5" centreFlowCE="100" flowSplinePA="" QnomPA="0.2" dpnomPA="5" flowSplineAT="" QnomAT="0.2" dpnomAT="5" flowSplinePB="" QnomPB="0.2" dpnomPB="5" flowSplineBT="" QnomBT="0.2" dpnomBT="5" Qleak="0" dpleak="100" tau="0.1">
+          <Port_Volume port1="Vol_Pump" port2="Vol_MotLeft_A" port3="Vol_MotLeft_B" port4="Vol_Tank" />
+        </DV43_ML>
+      </DV43>
+      <Hoses>
+        <Hose_LiftB_Cyl1A assembly="" Type="0" VolName="Vol_LiftB_A" L="0.15" Dinch="0.0984" E="7e4" Emin="7e7" Emax="5e8" />
+        <Hose_LiftB_Cyl2A assembly="" Type="0" VolName="Vol_LiftB_A" L="0.15" Dinch="0.0984" E="7e4" Emin="7e7" Emax="5e8" />
+        <Hose_LiftB_Cyl1B assembly="" Type="0" VolName="Vol_LiftB_B" L="0.25" Dinch="0.0984" E="7e4" Emin="7e7" Emax="5e8" />
+        <Hose_LiftB_Cyl2B assembly="" Type="0" VolName="Vol_LiftB_B" L="0.25" Dinch="0.0984" E="7e4" Emin="7e7" Emax="5e8" />
+        <Hose_TiltB_CylA assembly="" Type="0" VolName="Vol_TiltB_A" L="1" Dinch="0.0984" E="7e4" Emin="7e7" Emax="5e8" />
+        <Hose_TiltB_CylB assembly="" Type="0" VolName="Vol_TiltB_B" L="1" Dinch="0.0984" E="7e4" Emin="7e7" Emax="5e8" />
+        <Hose_TiltA_CylA assembly="" Type="0" VolName="Vol_TiltA_A" L="0.72" Dinch="0.0984" E="7e4" Emin="7e7" Emax="5e8" />
+        <Hose_TiltA_CylB assembly="" Type="0" VolName="Vol_TiltA_B" L="0.82" Dinch="0.0984" E="7e4" Emin="7e7" Emax="5e8" />
+        <Hose_Gripper_Cyl1A assembly="" Type="0" VolName="Vol_Gripper_A" L="0.92" Dinch="0.059" E="7e4" Emin="7e7" Emax="5e8" />
+        <Hose_Gripper_Cyl1B assembly="" Type="0" VolName="Vol_Gripper_B" L="0.92" Dinch="0.059" E="7e4" Emin="7e7" Emax="5e8" />
+        <Hose_Motor1A assembly="" Type="0" VolName="Vol_MotLeft_A" L="0.25" Dinch="0.0625" E="7e4" Emin="7e7" Emax="5e8" />
+        <Hose_Motor1B assembly="" Type="0" VolName="Vol_MotLeft_B" L="0.25" Dinch="0.0625" E="7e4" Emin="7e7" Emax="5e8" />
+      </Hoses>
+      <PV>
+        <Pressure_Valve assembly="" ControlSignal="" SpoolFunction="0" antiCSpool="No" lockSpool="No" Qnom="5" dpnom="5" prefbar="40" dpbar="15" tau="0.1">
+          <Port_Volume port1="Vol_Pump" port2="Vol_Tank" port3="Vol_Pump" port4="" />
+        </Pressure_Valve>
+      </PV>
+      <Motors>
+        <HydMotor1 assembly="" PrimName="ForceR_CrawlerL" type="0" ControlSignalAngle="Input1" ControlSignalBrake="" V="0.3" alfa="1" nyym="0.9" nyyv="0.95" i="100" Qleak="0.001" dpleak="100" ploss="8" Qloss="60" tau="0.3" Vrel="0.43" pcompensator="130" pdbar="20" FricName="" prelbar="25" plockbar="11" TbrMax="500">
+          <Port_Volume port1="Vol_MotLeft_A" port2="Vol_MotLeft_B" port3="" port4="" />
+        </HydMotor1>
+      </Motors>
+      <Pumps>
+        <DSG-7_DQ200 assembly="" PumpCNTRL="" PrimName="" rpm="1000" V="10" nyym="0.94" nyyv="0.93" Qleak="0.001" dpleak="100" i="1">
+          <Port_Volume port1="Vol_Pump" port2="Vol_Tank" />
+        </DSG-7_DQ200>
+      </Pumps>
+      <Volumes>
+        <Vol_Pump assembly="" Ind_pType="1" CTRL_IN="" p="3e6" Q="0" />
+        <Vol_Tank assembly="" Ind_pType="1" CTRL_IN="" p="0" Q="0" />
+        <Vol_LiftB_A assembly="" Ind_pType="0" CTRL_IN="" p="3e6" Q="0" />
+        <Vol_LiftB_B assembly="" Ind_pType="0" CTRL_IN="" p="3e6" Q="0" />
+        <Vol_TiltB_A assembly="" Ind_pType="0" CTRL_IN="" p="3e6" Q="0" />
+        <Vol_TiltB_B assembly="" Ind_pType="0" CTRL_IN="" p="3e6" Q="0" />
+        <Vol_TiltA_A assembly="" Ind_pType="0" CTRL_IN="" p="3e6" Q="0" />
+        <Vol_TiltA_B assembly="" Ind_pType="0" CTRL_IN="" p="3e6" Q="0" />
+        <Vol_Gripper_A assembly="" Ind_pType="0" CTRL_IN="" p="3e6" Q="0" />
+        <Vol_Gripper_B assembly="" Ind_pType="0" CTRL_IN="" p="3e6" Q="0" />
+        <Vol_MotLeft_A assembly="" Ind_pType="0" CTRL_IN="" p="3e5" Q="0" />
+        <Vol_MotLeft_B assembly="" Ind_pType="0" CTRL_IN="" p="3e5" Q="0" />
+      </Volumes>
+      <Cylinders>
+        <Cyl1_19mm assembly="" Type="0" PrimName="ForceT_Gripper_Cyl1" SplName="" d1mm="10" d2mm="6" d3mm="16" d4mm="5" LRmm="45" LCmm="44" LPmm="8" LAmm="1" xminmm="0" xmaxmm="20" Bc="2.1e11" nyy="0.95" Qleak="0.002" dpleak="100" k="0" c="0" isHydraulicDamper="Yes" maxDampingPressure="100" dampingLength="1" dampingCE="3e5">
+          <Port_Volume port1="Vol_Gripper_A" port2="Vol_Gripper_B" port3="" />
+        </Cyl1_19mm>
+        <Cyl2_19mm assembly="" Type="0" PrimName="ForceT_Gripper_Cyl1" SplName="" d1mm="10" d2mm="6" d3mm="16" d4mm="5" LRmm="45" LCmm="44" LPmm="8" LAmm="1" xminmm="0" xmaxmm="20" Bc="2.1e11" nyy="0.95" Qleak="0.002" dpleak="100" k="0" c="0" isHydraulicDamper="Yes" maxDampingPressure="100" dampingLength="1" dampingCE="3e5">
+          <Port_Volume port1="Vol_Gripper_A" port2="Vol_Gripper_B" port3="" />
+        </Cyl2_19mm>
+        <Cyl_80mm assembly="" Type="0" PrimName="ForceT_TiltA_C" SplName="" d1mm="13" d2mm="8" d3mm="16" d4mm="5" LRmm="108" LCmm="92" LPmm="15" LAmm="31" xminmm="0" xmaxmm="77" Bc="2.1e11" nyy="0.95" Qleak="0.002" dpleak="100" k="0" c="0" isHydraulicDamper="Yes" maxDampingPressure="100" dampingLength="1" dampingCE="3e5">
+          <Port_Volume port1="Vol_TiltA_A" port2="Vol_TiltA_B" port3="" />
+        </Cyl_80mm>
+        <Cyl1_92mm assembly="" Type="0" PrimName="ForceT_LiftB_C1" SplName="" d1mm="13" d2mm="8" d3mm="16" d4mm="5" LRmm="119" LCmm="94" LPmm="15" LAmm="31" xminmm="0" xmaxmm="93" Bc="2.1e11" nyy="0.95" Qleak="0.002" dpleak="100" k="0" c="0" isHydraulicDamper="Yes" maxDampingPressure="100" dampingLength="1" dampingCE="3e5">
+          <Port_Volume port1="Vol_LiftB_A" port2="Vol_LiftB_B" port3="" />
+        </Cyl1_92mm>
+        <Cyl2_92mm assembly="" Type="0" PrimName="ForceT_LiftB_C2" SplName="" d1mm="13" d2mm="8" d3mm="16" d4mm="5" LRmm="119" LCmm="94" LPmm="15" LAmm="31" xminmm="0" xmaxmm="93" Bc="2.1e11" nyy="0.95" Qleak="0.002" dpleak="100" k="0" c="0" isHydraulicDamper="Yes" maxDampingPressure="100" dampingLength="1" dampingCE="3e5">
+          <Port_Volume port1="Vol_LiftB_A" port2="Vol_LiftB_B" port3="" />
+        </Cyl2_92mm>
+        <Cyl_125mm assembly="" Type="0" PrimName="ForceT_TiltB_C" SplName="" d1mm="13" d2mm="8" d3mm="16" d4mm="5" LRmm="153" LCmm="137" LPmm="15" LAmm="31" xminmm="0" xmaxmm="109" Bc="2.1e11" nyy="0.95" Qleak="0.002" dpleak="100" k="0" c="0" isHydraulicDamper="Yes" maxDampingPressure="100" dampingLength="2" dampingCE="1e6">
+          <Port_Volume port1="Vol_TiltB_A" port2="Vol_TiltB_B" port3="" />
+        </Cyl_125mm>
+      </Cylinders>
+    </Hydraulics>
+  </Forces>
+  <Graphics>
+    <Under_Carriage_Graphics assembly="" FileName="../3ds/Telastorunko.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="Yes" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="3.141592653589793116" rz="0" />
+      <Colour r="0.2" g="0.2" b="0.2" />
+    </Under_Carriage_Graphics>
+    <Drive_GearL_Graphics assembly="" FileName="../3ds/Vetopyora.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Drive_GearL_Graphics>
+    <Drive_GearR_Graphics assembly="" FileName="../3ds/Vetopyora.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="1.570796326794896558" ry="0" rz="3.141592653589793116" />
+      <Colour r="0" g="0" b="0" />
+    </Drive_GearR_Graphics>
+    <Roller_Gear_Graphics assembly="" FileName="../3ds/Ohjainpyora.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="Yes" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="1.570796326794896558" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Roller_Gear_Graphics>
+    <Track_Piece_Graphics assembly="" FileName="../3ds/Telapala.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Track_Piece_Graphics>
+    <Ground_Graphics assembly="" FileName="../Enviroment/Ground.3ds" Scale="0.005" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="-0.1" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.4" g="0.4" b="0.2" />
+    </Ground_Graphics>
+    <Guide_Roll_Graphics assembly="" FileName="../3ds/Ohjainrulla.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Guide_Roll_Graphics>
+    <GuideRoll_L_Top_Graphics assembly="" FileName="../3ds/Telarulla.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0.01" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </GuideRoll_L_Top_Graphics>
+    <GuideRoll_R_Top_Graphics assembly="" FileName="../3ds/Telarulla.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="-0.01" />
+      <Orientation rx="3.141592653589793116" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </GuideRoll_R_Top_Graphics>
+    <Upper_Carrige_Graphics assembly="" FileName="../3ds/Ylarunko.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="Yes" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Upper_Carrige_Graphics>
+    <Lift_Boom_Graphics assembly="" FileName="../3ds/Nostopuomi.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Lift_Boom_Graphics>
+    <Cyl92mm_Body_R_Graphics assembly="" FileName="../3ds/Sylinter92mm_Oikea.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Cyl92mm_Body_R_Graphics>
+    <Cyl92mm_Body_L_Graphics assembly="" FileName="../3ds/Sylinter92mm_Vasen.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Cyl92mm_Body_L_Graphics>
+    <Tilt_Boom_Graphics assembly="" FileName="../3ds/Taittopuomi.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Tilt_Boom_Graphics>
+    <Cyl92mm_Rod_Graphics assembly="" FileName="../3ds/Sylinterivarsi 92mm.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Cyl92mm_Rod_Graphics>
+    <Cyl125mm_Body_Graphics assembly="" FileName="../3ds/Sylinteri125mm.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Cyl125mm_Body_Graphics>
+    <Cyl125mm_Rod_Graphics assembly="" FileName="../3ds/Sylinterivarsi 125mm.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Cyl125mm_Rod_Graphics>
+    <Arm_End_Graphics assembly="" FileName="../3ds/Kahmarin kaantorunko - Copy.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="1.570796326794896558" ry="0" rz="-1.570796326794896558" />
+      <Colour r="0" g="0" b="0" />
+    </Arm_End_Graphics>
+    <Tilt_Arm_Graphics assembly="" FileName="../3ds/Kaantovarsi.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Tilt_Arm_Graphics>
+    <X_Link_Graphics assembly="" FileName="../3ds/Kauhanivel.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </X_Link_Graphics>
+    <Gripper_Base_Graphics assembly="" FileName="../3ds/Kahmarin kourarunko.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Gripper_Base_Graphics>
+    <Gripper_1_Graphics assembly="" FileName="../3ds/Kahmari_1.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Gripper_1_Graphics>
+    <Gripper_2_Graphics assembly="" FileName="../3ds/Kahmari_2.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Gripper_2_Graphics>
+    <Cyl19mm_Body_Graphics assembly="" FileName="../3ds/Sylinteri runko 19mm.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Cyl19mm_Body_Graphics>
+    <Cyl19mm_Rod_Graphics assembly="" FileName="../3ds/Sylinterin varsi 19mm.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Cyl19mm_Rod_Graphics>
+    <Cyl80mm_Body_Graphics assembly="" FileName="../3ds/Sylinteri 80mm runko.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Cyl80mm_Body_Graphics>
+    <Cyl80mm_Rod_Graphics assembly="" FileName="../3ds/Sylinterivarsi 80mm.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Cyl80mm_Rod_Graphics>
+    <GripperLink_Graphics assembly="" FileName="../3ds/Kahmarin linkki.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" MaterialColl="" modShading="GGX" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="3.141592653589793116" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </GripperLink_Graphics>
+    <COLL_Gripper1 assembly="" FileName="../Collisions/Kahmari collision.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" MaterialColl="" modShading="Collision" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </COLL_Gripper1>
+    <COLL_Gripper2 assembly="" FileName="../Collisions/Kahmari collision.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" MaterialColl="" modShading="Collision" scriptName="" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No" flipNormals="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="3.141592653589793116" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </COLL_Gripper2>
+  </Graphics>
+  <Collisions>
+    <Collision_Ground_Gripper1 assembly="" BodyA="Ground" BodyB="Gripper_1" GraphA="Ground_Graphics" GraphB="Gripper_2_Graphics" K="2e5" e="0.1" c="0" Cvel="0" myy="0.12" NormalDirection="Both" FricName="" CollisionGroupName="" IgnoreObjectNames="" />
+    <Collision_Ground_Gripper2 assembly="" BodyA="Ground" BodyB="Gripper_2" GraphA="Ground_Graphics" GraphB="Gripper_1_Graphics" K="2e5" e="0.1" c="0" Cvel="0" myy="0.12" NormalDirection="Both" FricName="" CollisionGroupName="" IgnoreObjectNames="" />
+    <Collision_Gripper1_Gripper2 assembly="" BodyA="Gripper_1" BodyB="Gripper_2" GraphA="Gripper_2_Graphics" GraphB="Gripper_1_Graphics" K="2e5" e="0.1" c="0" Cvel="0" myy="0.12" NormalDirection="Both" FricName="" CollisionGroupName="" IgnoreObjectNames="" />
+  </Collisions>
+  <Inputs>
+    <LiftBoom name="LiftBoom" assembly="" isActive="Yes" InType="Analog" JoyNro="0" JoyCh="1" InputSource="" scriptName="" positiveOnly="No" Scale="-10" B="0" DeadZone="0" />
+    <TiltBoom name="TiltBoom" assembly="" isActive="Yes" InType="Analog" JoyNro="0" JoyCh="3" InputSource="" scriptName="" positiveOnly="No" Scale="10" B="0" DeadZone="0" />
+    <TiltArm name="TiltArm" assembly="" isActive="Yes" InType="Analog" JoyNro="0" JoyCh="2" InputSource="" scriptName="" positiveOnly="No" Scale="10" B="0" DeadZone="0" />
+    <Gripper name="Gripper" assembly="" isActive="No" InType="Analog" JoyNro="0" JoyCh="0" InputSource="" scriptName="" positiveOnly="No" Scale="-10" B="0" DeadZone="0" />
+    <Input1 name="Input1" assembly="" isActive="Yes" InType="Analog" JoyNro="0" JoyCh="0" InputSource="" scriptName="" positiveOnly="No" Scale="10" B="0" DeadZone="0" />
+  </Inputs>
+  <Particles>
+    <Pile assembly="" RelToC="Ground" OriRelToC="Ground">
+      <Size x="4" z="4" />
+      <Position x="0" y="0" z="0" />
+      <Orientation x="0" y="0" z="0" />
+      <PileParameters assembly="" IsMixed="0" IsAligned="0" PileType="0" CellIterationInterval="1" CellFraktile="98" ContactFrictionStiffness="0.5" sleepMotion="0" sleepingTimeDelay="0" broadPhaseAlgorithm="SAP" bendingModel="BF3Points" />
+      <ObjectDimensions x="1" y="0" z="0" />
+      <MBSContactGraph>
+        <PMBSContact_Ground Name="PMBSContact_Ground" assembly="" BodyName="Ground" GraphName="Ground_Graphics" UseCIM="Yes" UseTriangleMesh="Yes" TriangleContactMaterial="" IsStatic="No" GType="3DS" usage="All" k_coll="1e6" e_coll="0.02" myy="0.8" cylRadius="1" cylHeight="1" rollingResistance="0" thicknessValue="0.12" soilShearing="0.1" isDestructive="No" useTwistlocks="No" TwistlockDefinition="" />
+      </MBSContactGraph>
+    </Pile>
+    <Granular>
+      <Parameters assembly="" maxGranularParticles="1000" globalHeightFieldMaterial="defaultRamboMaterial" />
+    </Granular>
+    <RopeSystems>
+      <Ropes>
+        <CrawlerL assembly="" DrawType="TrackElement" GraphVisName="Track_Piece_Graphics" TriangleContactMaterial="" nparticles="45" nLines="3" attachToline="" Density="2000" RopeRadius="0.03" CollisionSphereRadius="0.01" k="3e4" c="0.01" k_coll="1e4" e_coll="0.05" scale_L="0.5" k_bend="5" c_bend="0.01" isLooped="Yes" ignoreAllContacts="No" useSegmentForceModel="Yes" lineSegmentForceScaling="1" scale_bending_constraint="1" c_global="0.5" k_bending_const="10" c_bending_const="0.01" myy="0.1">
+          <Color r="0" g="0" b="0" a="1" />
+          <RopeConstraints CrawlerL_Const0="DriverGearL" CrawlerL_Const1="GuideRollerL1" CrawlerL_Const2="GuideRollerL2" CrawlerL_Const3="GuideRollerL3" CrawlerL_Const4="GuideRollerL4" CrawlerL_Const5="GuideRollerL5" CrawlerL_Const6="GuideRollerL6" CrawlerL_Const7="GuideRollerL7" CrawlerL_Const8="GuideRollerL8" CrawlerL_Const9="RollerGearL" CrawlerL_Const10="GuideRollTop_L2" CrawlerL_Const11="GuideRollTop_L1" />
+        </CrawlerL>
+        <CrawlerR assembly="" DrawType="TrackElement" GraphVisName="Track_Piece_Graphics" TriangleContactMaterial="" nparticles="45" nLines="3" attachToline="" Density="2000" RopeRadius="0.03" CollisionSphereRadius="0.01" k="1e4" c="0.01" k_coll="1e4" e_coll="0.05" scale_L="1" k_bend="5" c_bend="0.01" isLooped="Yes" ignoreAllContacts="No" useSegmentForceModel="Yes" lineSegmentForceScaling="1" scale_bending_constraint="1" c_global="0.5" k_bending_const="10" c_bending_const="0.01" myy="0">
+          <Color r="0" g="0" b="0" a="1" />
+          <RopeConstraints CrawlerR_Const0="DriveGearR" CrawlerR_Const1="GuideRollerR1" CrawlerR_Const2="GuideRollerR2" CrawlerR_Const3="GuideRollerR3" CrawlerR_Const4="GuideRollerR4" CrawlerR_Const5="GuideRollerR5" CrawlerR_Const6="GuideRollerR6" CrawlerR_Const7="GuideRollerR7" CrawlerR_Const8="GuideRollerR8" CrawlerR_Const9="RollerGearR" CrawlerR_Const10="GuideRollTop_R2" CrawlerR_Const11="GuideRollTop_R1" />
+        </CrawlerR>
+      </Ropes>
+      <RopeConstraints>
+        <DriverGearL assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.DriveL" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Drive_GearL_Graphics" c="0.01" Radius="0.0314" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.213">
+            <I Ixx="0.051" Iyy="0.052" Izz="0.077" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot1 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot1>
+            <Slot2 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot2>
+            <Slot3 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot3>
+          </Slots>
+        </DriverGearL>
+        <RollerGearL assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.RollerL" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Roller_Gear_Graphics" c="0.01" Radius="0.028" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.083">
+            <I Ixx="0.014" Iyy="0.014" Izz="0.026" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot4 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot4>
+            <Slot5 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot5>
+            <Slot6 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot6>
+          </Slots>
+        </RollerGearL>
+        <GuideRollerL1 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerL1" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot7 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot7>
+            <Slot8 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot8>
+            <Slot9 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot9>
+          </Slots>
+        </GuideRollerL1>
+        <GuideRollerL2 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerL2" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot10 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot10>
+            <Slot11 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot11>
+            <Slot12 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot12>
+          </Slots>
+        </GuideRollerL2>
+        <GuideRollerL3 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerL3" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot13 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot13>
+            <Slot14 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot14>
+            <Slot15 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot15>
+          </Slots>
+        </GuideRollerL3>
+        <GuideRollerL4 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerL4" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot16 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot16>
+            <Slot17 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot17>
+            <Slot18 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot18>
+          </Slots>
+        </GuideRollerL4>
+        <GuideRollerL5 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerL5" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot19 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot19>
+            <Slot20 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot20>
+            <Slot21 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot21>
+          </Slots>
+        </GuideRollerL5>
+        <GuideRollerL6 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerL6" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot22 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot22>
+            <Slot23 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot23>
+            <Slot24 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot24>
+          </Slots>
+        </GuideRollerL6>
+        <GuideRollerL7 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerL7" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot25 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot25>
+            <Slot26 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot26>
+            <Slot27 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot27>
+          </Slots>
+        </GuideRollerL7>
+        <GuideRollerL8 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerL8" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot28 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot28>
+            <Slot29 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot29>
+            <Slot30 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot30>
+          </Slots>
+        </GuideRollerL8>
+        <GuideRollTop_L1 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerTopL1" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="GuideRoll_L_Top_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.01">
+            <I Ixx="0.0055" Iyy="0.0055" Izz="0.0012" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot31 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot31>
+            <Slot32 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot32>
+            <Slot33 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot33>
+          </Slots>
+        </GuideRollTop_L1>
+        <GuideRollTop_L2 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerTopL2" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="GuideRoll_L_Top_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.01">
+            <I Ixx="0.0055" Iyy="0.0055" Izz="0.0012" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot34 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot34>
+            <Slot35 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot35>
+            <Slot36 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot36>
+          </Slots>
+        </GuideRollTop_L2>
+        <DriveGearR assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.DriveR" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Drive_GearR_Graphics" c="0.01" Radius="0.0314" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.213">
+            <I Ixx="0.051" Iyy="0.052" Izz="0.077" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot37 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot37>
+            <Slot38 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot38>
+            <Slot39 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot39>
+          </Slots>
+        </DriveGearR>
+        <RollerGearR assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.RollerR" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Roller_Gear_Graphics" c="0.01" Radius="0.028" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.083">
+            <I Ixx="0.014" Iyy="0.014" Izz="0.026" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot40 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot40>
+            <Slot41 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot41>
+            <Slot42 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot42>
+          </Slots>
+        </RollerGearR>
+        <GuideRollerR1 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerR1" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot43 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot43>
+            <Slot44 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot44>
+            <Slot45 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot45>
+          </Slots>
+        </GuideRollerR1>
+        <GuideRollerR2 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerR2" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot46 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot46>
+            <Slot47 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot47>
+            <Slot48 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot48>
+          </Slots>
+        </GuideRollerR2>
+        <GuideRollerR3 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerR3" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot49 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot49>
+            <Slot50 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot50>
+            <Slot51 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot51>
+          </Slots>
+        </GuideRollerR3>
+        <GuideRollerR4 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerR4" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot52 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot52>
+            <Slot53 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot53>
+            <Slot54 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot54>
+          </Slots>
+        </GuideRollerR4>
+        <GuideRollerR5 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerR5" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot55 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot55>
+            <Slot56 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot56>
+            <Slot57 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot57>
+          </Slots>
+        </GuideRollerR5>
+        <GuideRollerR6 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerR6" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot58 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot58>
+            <Slot59 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot59>
+            <Slot60 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot60>
+          </Slots>
+        </GuideRollerR6>
+        <GuideRollerR7 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerR7" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot61 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot61>
+            <Slot62 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot62>
+            <Slot63 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot63>
+          </Slots>
+        </GuideRollerR7>
+        <GuideRollerR8 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerR8" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="Guide_Roll_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.012">
+            <I Ixx="0.0088" Iyy="0.0088" Izz="0.0014" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot64 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot64>
+            <Slot65 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot65>
+            <Slot66 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot66>
+          </Slots>
+        </GuideRollerR8>
+        <GuideRollTop_R1 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerTopR1" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="GuideRoll_R_Top_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.01">
+            <I Ixx="0.0055" Iyy="0.0055" Izz="0.0012" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot67 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot67>
+            <Slot68 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot68>
+            <Slot69 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot69>
+          </Slots>
+        </GuideRollTop_R1>
+        <GuideRollTop_R2 assembly="" Type="Pulley" AttachmentBodyType="Body" AttachmentBody="Under_Carriage" AttachmentBodyCS="Under_Carriage.GuideRollerTopR2" InputPrimitiveType="None" InputPrimitiveName="" InputPointSide="Left" GraphVisName="GuideRoll_R_Top_Graphics" c="0.01" Radius="0.007" RopeLengthOnConstraint="0" MaxRopeLengthOnConstraint="0" InputUpdateWeight="0" OutputUpdateWeight="0" UseReelWidth="No" ReelWidth="0" ReelThickness="0" ReelStartingEdge="Left">
+          <PositionInBodyCS x="0" y="0" z="0" />
+          <OrientationInBodyCS x="0" y="0" z="0" />
+          <Inertia mass="0.01">
+            <I Ixx="0.0055" Iyy="0.0055" Izz="0.0012" Ixy="0" Izx="0" Iyz="0" />
+          </Inertia>
+          <Slots>
+            <Slot70 assembly="">
+              <PosL x="0" y="0" z="0.025" />
+            </Slot70>
+            <Slot71 assembly="">
+              <PosL x="0" y="0" z="0" />
+            </Slot71>
+            <Slot72 assembly="">
+              <PosL x="0" y="0" z="-0.025" />
+            </Slot72>
+          </Slots>
+        </GuideRollTop_R2>
+      </RopeConstraints>
+    </RopeSystems>
+  </Particles>
+  <SoundComponents assembly="" listenerAttachedToBody="" volume="0" listenerDirection_x="0" listenerDirection_y="0" listenerDirection_z="0" listenerPosition_x="0" listenerPosition_y="0" listenerPosition_z="0" />
+  <Properties vsync="Yes" useFragmentLight="No" overrideOptions="Yes" maxActiveLights="8" defaultSceneShader="" useHeadTracking="No" headTrackingMode="Symmetric" computeNearFar="No" displaySizeWidth="0.4" displaySizeHeight="0.3" displaySizeDistance="0.5" motionblur_persistence="0.019999999552965164185" textureScaleDownFactor="1" textureMaxResolution="4096" environmentReflectionCube="" mergeTextures="No" controlSignalCameraNext="" controlSignalCameraPrev="" alpha_func_c="GREATER" alpha_ref="0.5" programDefinitions="" textureDefinitions="" plantDefinitions="" plantPositions="" setClearColor="No" useShadows="No" shadowUseFragment="No" shadowTextureSize="512" shadowMinLightMargin="10" shadowMaxFarPlane="200" shadowStyle="1" shadowDebugDraw="No" shadowIntensity="0.5" shadowFog="No" defaultShadowShader="" useForestShadow="No" useTouchScreen="No" touchScreenPositionX="0" touchScreenPositionY="0" touchScreenSizeX="1024" touchScreenSizeY="768" touchScreenNames="" touchScreenFontName="" touchScreenFontSize="24" touchScreenMenuTextureBase="" touchScreenMenuTextureHover="">
+    <clearColor R="0" G="0" B="0" A="1" />
+    <cameraLimits useCameraLimits="No" xMin="-1000" xMax="1000" yMin="7.5" yMax="100" zMin="-1000" zMax="1000" />
+    <touchScreenBackgroundColor R="0.2" G="0.2" B="0.6" A="1" />
+    <touchScreenFontColor R="0" G="0" B="0" A="1" />
+  </Properties>
+  <Cameras>
+    <Camera1 assembly="" RefBody="Under_Carriage" RefBodyLookAt="Under_Carriage" ControlSignal="" ControlSignalFov="" ControlSignalAratio="" AcceptHeadTracking="No" AcceptViewAdjustments="Yes" fov="45">
+      <Position x="0.25972687176836101175" y="0.56064218212278071896" z="0.9396336969658712901" />
+      <LookAt x="-0.8756669163703918457" y="-2.0484098419547080994" z="-3.1717808246612548828" />
+      <UpVector x="0" y="1" z="0" />
+    </Camera1>
+  </Cameras>
+  <Light>
+    <DefaultLight assembly="" IsActive="Yes">
+      <Position x="0" y="5" z="0" Fixed="0" />
+      <Diffuse R="0.5" G="0.5" B="0.5" A="1" />
+      <Specular R="0.5" G="0.5" B="0.5" A="1" />
+      <Ambient R="0.5" G="0.5" B="0.5" A="1" />
+    </DefaultLight>
+  </Light>
+  <Scenes>
+    <Scene1 assembly="" Camera="Camera1" DrawAxis="No" FoVy="45" ZFront="0.01" ZRear="500" AxisScale="0.05" useFrames="Yes" isActive="Yes" stayOnTop="No" overrideConfig="No" SizeX="1" SizeY="1" PositionX="0" PositionY="0" />
+  </Scenes>
+  <WeatherCollection>
+    <WeatherSettings assembly="" activeWeather="" automaticTransition="No" />
+  </WeatherCollection>
+  <Sounds AttachedToBody="" soundVolumeMultiplier="1" soundViewerDirectionX="0" soundViewerDirectionY="0" soundViewerDirectionZ="-1" soundViewerPositionX="0" soundViewerPositionY="0" soundViewerPositionZ="0" />
+  <Comments Body_Under_Carriage="Mass (user-overridden) = 3.4187000 kilograms\n\nCenter of mass: ( meters )\n X = -0.00653038\n Y = -0.04107178\n Z = -0.00021304\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.02467666 Lxy = 0.00020903 Lxz = -0.00011453\n Lyx = 0.00020903 Lyy = 0.04761456 Lyz = 0.00001650\n Lzx = -0.00011453 Lzy = 0.00001650 Lzz = 0.02529550" Body_Upper_Carriage="Mass (user-overridden) = 12.50 kilograms\n\nCenter of mass: ( meters )\n X = 0.01653428\n Y = 0.04211763\n Z = -0.08476370\n\nMoments of inertia: ( kilograms * square meters )\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.10364189 Lxy = 0.00153656 Lxz = 0.00845734\n Lyx = 0.00153656 Lyy = 0.14321979 Lyz = 0.00119219\n Lzx = 0.00845734 Lzy = 0.00119219 Lzz = 0.06918018\n" Body_Lift_Boom="Mass (user-overridden) = 1.39500000 kilograms\n\n\nCenter of mass: ( meters )\n X = 0.20381177\n Y = -0.04416268\n Z = 0.00007793\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00553360 Lxy = -0.00805817 Lxz = 0.00000162\n Lyx = -0.00805817 Lyy = 0.01831339 Lyz = 0.00000356\n Lzx = 0.00000162 Lzy = 0.00000356 Lzz = 0.02347110\n" Body_Tilt_Boom="Mass = 0.77630379 kilograms\n\n\nCenter of mass: ( meters )\n X = -0.06216107\n Y = -0.02618132\n Z = 0.00006125\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00027832 Lxy = 0.00003309 Lxz = 0.00000229\n Lyx = 0.00003309 Lyy = 0.00594481 Lyz = 0.00000003\n Lzx = 0.00000229 Lzy = 0.00000003 Lzz = 0.00604431" Body_Arm_End="Mass = 0.27320262 kilograms\n\n\nCenter of mass: ( meters )\n X = -0.01800541\n Y = -0.02988011\n Z = 0.00001076\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00014643 Lxy = 0.00001828 Lxz = 0.00000002\n Lyx = 0.00001828 Lyy = 0.00011905 Lyz = 0.00000002\n Lzx = 0.00000002 Lzy = 0.00000002 Lzz = 0.00012252" Body_Tilt_Arm="Mass = 0.05070108 kilograms\n\n\nCenter of mass: ( meters )\n X = 0.01856407\n Y = -0.00004387\n Z = 0.00000000\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00001674 Lxy = 0.00000000 Lxz = 0.00000000\n Lyx = 0.00000000 Lyy = 0.00003257 Lyz = 0.00000000\n Lzx = 0.00000000 Lzy = 0.00000000 Lzz = 0.00001683" Body_X_Link="Mass = 0.10674709 kilograms\n\n\nCenter of mass: ( meters )\n X = 0.00000000\n Y = 0.02372936\n Z = 0.00000000\n\n\nMoments of inertia: ( kilograms * square meters )\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00005691 Lxy = 0.00000000 Lxz = 0.00000000\n Lyx = 0.00000000 Lyy = 0.00001376 Lyz = 0.00000000\n Lzx = 0.00000000 Lzy = 0.00000000 Lzz = 0.00004545\n" Body_Gripper_Base="Mass = 0.02601038 kilograms\n\n\nCenter of mass: ( meters )\n X = 0.00000000\n Y = 0.00000000\n Z = -0.00329875\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00001905 Lxy = 0.00000000 Lxz = 0.00000000\n Lyx = 0.00000000 Lyy = 0.00001124 Lyz = 0.00000000\n Lzx = 0.00000000 Lzy = 0.00000000 Lzz = 0.00002020" Body_Gripper_1="Mass = 0.21556498 kilograms\n\n\nCenter of mass: ( meters )\n X = 0.03283448\n Y = 0.00592076\n Z = 0.00019359\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the output coordinate system. (Using positive tensor notation.)\n Ixx = 0.00028353 Ixy = 0.00010860 Ixz = 0.00000001\n Iyx = 0.00010860 Iyy = 0.00051304 Iyz = 0.00000013\n Izx = 0.00000001 Izy = 0.00000013 Izz = 0.00041295" Body_Gripper_2="Mass = 0.21556498 kilograms\n\n\nCenter of mass: ( meters )\n X = -0.03283448\n Y = 0.00592076\n Z = -0.00019359\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00027597 Lxy = -0.00006669 Lxz = -0.00000136\n Lyx = -0.00006669 Lyy = 0.00028063 Lyz = 0.00000012\n Lzx = -0.00000136 Lzy = 0.00000012 Lzz = 0.00017300" Body_GripperLink="Mass = 0.00369712 kilograms\n\n\nCenter of mass: ( meters )\n X = 0.01750000\n Y = 0.00200340\n Z = 0.00000000\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00000002 Lxy = 0.00000000 Lxz = 0.00000000\n Lyx = 0.00000000 Lyy = 0.00000048 Lyz = 0.00000000\n Lzx = 0.00000000 Lzy = 0.00000000 Lzz = 0.00000049" Dummy_Cyl92mm_R_Body="Mass = 0.03567058 kilograms\n\n\nCenter of mass: ( meters )\n X = 0.06811794\n Y = 0.00534207\n Z = -0.00293308\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00000385 Lxy = -0.00000135 Lxz = 0.00000093\n Lyx = -0.00000135 Lyy = 0.00007715 Lyz = -0.00000062\n Lzx = 0.00000093 Lzy = -0.00000062 Lzz = 0.00007691\n\n" Dummy_Cyl92mm_L_Body="Mass = 0.03567102 kilograms\n\n\nCenter of mass: ( meters )\n X = 0.06811820\n Y = 0.00532867\n Z = 0.00293322\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00000384 Lxy = -0.00000135 Lxz = -0.00000093\n Lyx = -0.00000135 Lyy = 0.00007715 Lyz = 0.00000061\n Lzx = -0.00000093 Lzy = 0.00000061 Lzz = 0.00007691\n\n" Dummy_Cyl92mm_R_Rod="Mass = 0.06917179 kilograms\n\n\nCenter of mass: ( meters )\n X = -0.06304592\n Y = 0.00000000\n Z = 0.00000000\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00000102 Lxy = 0.00000000 Lxz = 0.00000000\n Lyx = 0.00000000 Lyy = 0.00015148 Lyz = 0.00000000\n Lzx = 0.00000000 Lzy = 0.00000000 Lzz = 0.00015161" Dummy_Cyl92mm_L_Rod="Mass = 0.06917179 kilograms\n\n\nCenter of mass: ( meters )\n X = -0.06304592\n Y = 0.00000000\n Z = 0.00000000\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00000102 Lxy = 0.00000000 Lxz = 0.00000000\n Lyx = 0.00000000 Lyy = 0.00015148 Lyz = 0.00000000\n Lzx = 0.00000000 Lzy = 0.00000000 Lzz = 0.00015161" Dummy_Cyl125mm_Body="Mass = 0.17484193 kilograms\n\n\nCenter of mass: ( meters )\n X = 0.09368470\n Y = 0.00122697\n Z = 0.00018343\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00001072 Lxy = 0.00000339 Lxz = -0.00000185\n Lyx = 0.00000339 Lyy = 0.00071785 Lyz = 0.00000032\n Lzx = -0.00000185 Lzy = 0.00000032 Lzz = 0.00072040" Dummy_Cyl125mm_Rod="Mass = 0.08194890 kilograms\n\n\nCenter of mass: ( meters )\n X = -0.07949495\n Y = 0.00020953\n Z = -0.00629127\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00000112 Lxy = 0.00000000 Lxz = 0.00000000\n Lyx = 0.00000000 Lyy = 0.00026599 Lyz = 0.00000000\n Lzx = 0.00000000 Lzy = 0.00000000 Lzz = 0.00026612\n\n\n" Dummy_Cyl80mm_Body="Mass = 0.15054158 kilograms\n\n\nCenter of mass: ( meters )\n X = 0.06946891\n Y = 0.00000000\n Z = -0.00098730\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00000906 Lxy = 0.00000000 Lxz = -0.00000216\n Lyx = 0.00000000 Lyy = 0.00036251 Lyz = 0.00000000\n Lzx = -0.00000216 Lzy = 0.00000000 Lzz = 0.00036015\n" Dummy_Cyl80mm_Rod="Mass = 0.06452557 kilograms\n\n\nCenter of mass: ( meters )\n X = -0.05706945\n Y = 0.00000000\n Z = 0.00000000\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00000098 Lxy = 0.00000000 Lxz = 0.00000000\n Lyx = 0.00000000 Lyy = 0.00011954 Lyz = 0.00000000\n Lzx = 0.00000000 Lzy = 0.00000000 Lzz = 0.00011968" Dummy_Cyl1_Gripper_Body="Mass = 0.04106630 kilograms\n\n\nCenter of mass: ( meters )\n X = 0.02202139\n Y = 0.00000000\n Z = 0.00005614\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00000134 Lxy = 0.00000000 Lxz = 0.00000004\n Lyx = 0.00000000 Lyy = 0.00001133 Lyz = 0.00000000\n Lzx = 0.00000004 Lzy = 0.00000000 Lzz = 0.00001136" Dummy_Cyl2_Gripper_Body="Mass = 0.04106630 kilograms\n\n\nCenter of mass: ( meters )\n X = 0.02202139\n Y = 0.00000000\n Z = 0.00005614\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00000134 Lxy = 0.00000000 Lxz = 0.00000004\n Lyx = 0.00000000 Lyy = 0.00001133 Lyz = 0.00000000\n Lzx = 0.00000004 Lzy = 0.00000000 Lzz = 0.00001136" Dummy_Cyl1_Gripper_Rod="Mass = 0.01466138 kilograms\n\n\nCenter of mass: ( meters )\n X = -0.02439610\n Y = 0.00000000\n Z = 0.00000000\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00000011 Lxy = 0.00000000 Lxz = 0.00000000\n Lyx = 0.00000000 Lyy = 0.00000479 Lyz = 0.00000000\n Lzx = 0.00000000 Lzy = 0.00000000 Lzz = 0.00000481" Dummy_Cyl2_Gripper_Rod="Mass = 0.01466138 kilograms\n\n\nCenter of mass: ( meters )\n X = -0.02439610\n Y = 0.00000000\n Z = 0.00000000\n\n\nMoments of inertia: ( kilograms * square meters )\nTaken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.)\n Lxx = 0.00000011 Lxy = 0.00000000 Lxz = 0.00000000\n Lyx = 0.00000000 Lyy = 0.00000479 Lyz = 0.00000000\n Lzx = 0.00000000 Lzy = 0.00000000 Lzz = 0.00000481" Graphics_Tilt_Boom_Graphics="\n" />
+</DMInputFile>

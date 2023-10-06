@@ -1,0 +1,279 @@
+
+
+MODEL STRUCTURE:
+
+Number of bodies : 									12
+Number of joints : 									15
+Number of joint coordinates : 						22
+Number of closed loop constraint equations : 		15
+DOF : 												5
+
+
+
+
+Vector of body preceding body indices :
+0   0   1   2   3   4   7   5   5   8   11   9   0   
+
+
+Preceding bodies :
+
+Ground <-- Under_Carriage 
+Under_Carriage <-- Upper_Carriage 
+Upper_Carriage <-- Lift_Boom 
+Lift_Boom <-- Tilt_Boom 
+Tilt_Boom <-- Arm_End 
+X_Link <-- Tilt_Arm 
+Arm_End <-- X_Link 
+Arm_End <-- Gripper_Base 
+Gripper_Base <-- Gripper_1 
+GripperLink <-- Gripper_2 
+Gripper_1 <-- GripperLink 
+Ground <-- Cube 
+
+Vector of kinematic chain final bodies :
+
+
+Body											 Final 
+
+Ground                                   		 No
+Under_Carriage                           		 No
+Upper_Carriage                           		 No
+Lift_Boom                                		 No
+Tilt_Boom                                		 No
+Arm_End                                  		 No
+Tilt_Arm                                 		 Yes
+X_Link                                   		 No
+Gripper_Base                             		 No
+Gripper_1                                		 No
+Gripper_2                                		 Yes
+GripperLink                              		 No
+Cube                                     		 Yes
+
+
+Joints and bodies related to a joint
+
+=================================
+
+Ground_UnderCarriage 
+
+Number of preceding bodies = 1 
+Number of preceding joints = 1
+---------------------------------
+Under_Carriage 
+	--> Ground_UnderCarriage -->
+		Ground
+
+=================================
+
+UnderCarriage_UpperCarriage 
+
+Number of preceding bodies = 2 
+Number of preceding joints = 2
+---------------------------------
+Upper_Carriage 
+	--> UnderCarriage_UpperCarriage -->
+		Under_Carriage
+			--> Ground_UnderCarriage -->
+				Ground
+
+=================================
+
+UpperCarriage_LiftBoom 
+
+Number of preceding bodies = 3 
+Number of preceding joints = 3
+---------------------------------
+Lift_Boom 
+	--> UpperCarriage_LiftBoom -->
+		Upper_Carriage
+			--> UnderCarriage_UpperCarriage -->
+				Under_Carriage
+					--> Ground_UnderCarriage -->
+						Ground
+
+=================================
+
+LiftBoom_TiltBoom 
+
+Number of preceding bodies = 4 
+Number of preceding joints = 4
+---------------------------------
+Tilt_Boom 
+	--> LiftBoom_TiltBoom -->
+		Lift_Boom
+			--> UpperCarriage_LiftBoom -->
+				Upper_Carriage
+					--> UnderCarriage_UpperCarriage -->
+						Under_Carriage
+							--> Ground_UnderCarriage -->
+								Ground
+
+=================================
+
+TiltBoom_ArmEnd 
+
+Number of preceding bodies = 5 
+Number of preceding joints = 5
+---------------------------------
+Arm_End 
+	--> TiltBoom_ArmEnd -->
+		Tilt_Boom
+			--> LiftBoom_TiltBoom -->
+				Lift_Boom
+					--> UpperCarriage_LiftBoom -->
+						Upper_Carriage
+							--> UnderCarriage_UpperCarriage -->
+								Under_Carriage
+									--> Ground_UnderCarriage -->
+										Ground
+
+=================================
+
+Arm_End_X_Link 
+
+Number of preceding bodies = 6 
+Number of preceding joints = 6
+---------------------------------
+X_Link 
+	--> Arm_End_X_Link -->
+		Arm_End
+			--> TiltBoom_ArmEnd -->
+				Tilt_Boom
+					--> LiftBoom_TiltBoom -->
+						Lift_Boom
+							--> UpperCarriage_LiftBoom -->
+								Upper_Carriage
+									--> UnderCarriage_UpperCarriage -->
+										Under_Carriage
+											--> Ground_UnderCarriage -->
+												Ground
+
+=================================
+
+Tilt_Arm_X_Link 
+
+Number of preceding bodies = 7 
+Number of preceding joints = 7
+---------------------------------
+Tilt_Arm 
+	--> Tilt_Arm_X_Link -->
+		X_Link
+			--> Arm_End_X_Link -->
+				Arm_End
+					--> TiltBoom_ArmEnd -->
+						Tilt_Boom
+							--> LiftBoom_TiltBoom -->
+								Lift_Boom
+									--> UpperCarriage_LiftBoom -->
+										Upper_Carriage
+											--> UnderCarriage_UpperCarriage -->
+												Under_Carriage
+													--> Ground_UnderCarriage -->
+														Ground
+
+=================================
+
+ArmEnd_GripperBase 
+
+Number of preceding bodies = 6 
+Number of preceding joints = 6
+---------------------------------
+Gripper_Base 
+	--> ArmEnd_GripperBase -->
+		Arm_End
+			--> TiltBoom_ArmEnd -->
+				Tilt_Boom
+					--> LiftBoom_TiltBoom -->
+						Lift_Boom
+							--> UpperCarriage_LiftBoom -->
+								Upper_Carriage
+									--> UnderCarriage_UpperCarriage -->
+										Under_Carriage
+											--> Ground_UnderCarriage -->
+												Ground
+
+=================================
+
+GripperBase1_Gripper1 
+
+Number of preceding bodies = 7 
+Number of preceding joints = 7
+---------------------------------
+Gripper_1 
+	--> GripperBase1_Gripper1 -->
+		Gripper_Base
+			--> ArmEnd_GripperBase -->
+				Arm_End
+					--> TiltBoom_ArmEnd -->
+						Tilt_Boom
+							--> LiftBoom_TiltBoom -->
+								Lift_Boom
+									--> UpperCarriage_LiftBoom -->
+										Upper_Carriage
+											--> UnderCarriage_UpperCarriage -->
+												Under_Carriage
+													--> Ground_UnderCarriage -->
+														Ground
+
+=================================
+
+Gripper1_GripperLink 
+
+Number of preceding bodies = 8 
+Number of preceding joints = 8
+---------------------------------
+GripperLink 
+	--> Gripper1_GripperLink -->
+		Gripper_1
+			--> GripperBase1_Gripper1 -->
+				Gripper_Base
+					--> ArmEnd_GripperBase -->
+						Arm_End
+							--> TiltBoom_ArmEnd -->
+								Tilt_Boom
+									--> LiftBoom_TiltBoom -->
+										Lift_Boom
+											--> UpperCarriage_LiftBoom -->
+												Upper_Carriage
+													--> UnderCarriage_UpperCarriage -->
+														Under_Carriage
+															--> Ground_UnderCarriage -->
+																Ground
+
+=================================
+
+Gripper2_GripperLink 
+
+Number of preceding bodies = 9 
+Number of preceding joints = 9
+---------------------------------
+Gripper_2 
+	--> Gripper2_GripperLink -->
+		GripperLink
+			--> Gripper1_GripperLink -->
+				Gripper_1
+					--> GripperBase1_Gripper1 -->
+						Gripper_Base
+							--> ArmEnd_GripperBase -->
+								Arm_End
+									--> TiltBoom_ArmEnd -->
+										Tilt_Boom
+											--> LiftBoom_TiltBoom -->
+												Lift_Boom
+													--> UpperCarriage_LiftBoom -->
+														Upper_Carriage
+															--> UnderCarriage_UpperCarriage -->
+																Under_Carriage
+																	--> Ground_UnderCarriage -->
+																		Ground
+
+=================================
+
+Ground_Cube 
+
+Number of preceding bodies = 1 
+Number of preceding joints = 1
+---------------------------------
+Cube 
+	--> Ground_Cube -->
+		Ground

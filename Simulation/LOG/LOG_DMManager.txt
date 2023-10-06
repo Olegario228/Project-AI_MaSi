@@ -1,0 +1,38 @@
+11:59:45: DM Manager started
+11:59:47: Manager selects port 4763
+11:59:47: Manager creating model
+11:59:47: Manager waiting for GUI to connect
+11:59:47: Manager got connect from GUI
+11:59:47: DMHandleNewConnection: Got PDU: ID=1002, Type=1002, dsize=0
+11:59:47: GUI going to receive Environment Parameters
+11:59:47: Manager receiving environment:
+11:59:47: FINISHED RECEIVING ENVIRONMENT, xmlname member: C:\Users\sh24000\OneDrive - Savonia-ammattikorkeakoulu\Tiedostot\MeVEA\Test Project-Ai-MaSi\Simulation\Ai-Masi_V0.08.mvs
+11:59:47: Manager will parse files
+11:59:47: Manager got environment: 1 solvers
+11:59:47: Adding socket to GUI sockets 0
+11:59:47: GUI connected
+11:59:47: GUI ready, creating solvers
+11:59:47: Creating nSolvers = 1 threads from 1 factories
+11:59:47: Creating solver from Standard Factory
+11:59:48: Solver created using Standard Factory
+11:59:48: Select() returns 1: New Connection
+11:59:48: DMHandleNewConnection: Got PDU: ID=0, Type=1001, dsize=0
+11:59:48: Adding socket to Solver Sockets (solverid)
+11:59:48: Solver 0 ready
+11:59:51: GUI -1 wants to start
+11:59:51: Starting all
+11:59:51: Sending start to solver 0
+11:59:51: Got response PDU_ACK from solver 0
+11:59:51: Sending start to GUI, sock[2]!
+11:59:51: Got response PDU_ACK from GUI!
+11:59:52: Simulation time: 1.063000
+11:59:52: Receiving End from Socket 0
+11:59:52: Sending PDU_END to Solver 0
+11:59:52: Receiving PDU_END from Solver 0
+11:59:52: Solver 0 ending as ordered
+11:59:52: Informed GUI that all quitting
+11:59:55: Manager Quitting
+11:59:55: Manager ending...
+11:59:55: Manager in destructor
+11:59:55: Manager destroyes model
+11:59:55: Manager destroyed all, closing...

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MeVEASimulation>
+  <Environment simulationName="New Simulation" particlesInThread="Yes" particleCellsInThread="Yes" collisionGroupDefinitionsFile="" nCollisionThreads="4" />
+  <Models ModelFile="Ai-MaSi_Messut_V0.01.xml" solverID="1" useArchive="No" MPKFile="" hydraulicsSchematicFile="Ai-MaSi_schematic.xml" />
+  <ModelCreationInfo modelVersion="" softwareVersion="5.0.0" modellerVersion="2022" solverVersion="5.0.0.4880" />
+</MeVEASimulation>

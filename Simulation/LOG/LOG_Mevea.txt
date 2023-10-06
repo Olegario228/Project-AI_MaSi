@@ -1,0 +1,14 @@
+11:59:45: Model New Project loaded with 5 degrees of freedom, using config and resources from C:/Program Files/Mevea/
+11:59:48: Visualization: Using geometry based track elements
+11:59:48: Setting camera to body 1: Under_Carriage
+11:59:49: Total loading time 3.968159
+11:59:49: Solver started using command line: "C:\Program Files\Mevea\Bin\MeveaSolver.exe" /mvs "C:\Users\sh24000\OneDrive - Savonia-ammattikorkeakoulu\Tiedostot\MeVEA\Test Project-Ai-MaSi\Simulation\Ai-Masi_V0.08.mvs"
+11:59:51: Position warning of constraint UnderCarriage_UpperCarriage component Y-coordinate is -2.0000000000000000 mm. Please check the constraint definition.
+See LOG/LOG_Model.txt Constraints for more information.
+11:59:51: Position warning of constraint Tilt_Arm_X_Link component Y-coordinate is -4.9641016151377730 mm. Please check the constraint definition.
+See LOG/LOG_Model.txt Constraints for more information.
+11:59:51: Position warning of constraint Gripper1_GripperLink component X-coordinate is -4.8660254037844393 mm. Please check the constraint definition.
+See LOG/LOG_Model.txt Constraints for more information.
+11:59:51: Position warning of constraint Gripper1_GripperLink component Y-coordinate is -6.4282032302755052 mm. Please check the constraint definition.
+See LOG/LOG_Model.txt Constraints for more information.
+11:59:52: Results saved in 0.00 seconds

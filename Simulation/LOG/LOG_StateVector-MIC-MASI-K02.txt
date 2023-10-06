@@ -1,0 +1,41 @@
+Number of differential equations 11 -------
+Tyres --------------------------------------
+Motors -------------------------------------
+_X_Link.z0 = 0.000000
+h[4] = Tilt_Arm_X_Link.z0 = 0.000000
+h[5] = GripperBase1_Gripper1.z0 = 0.000000
+h[6] = GripperBase2_Gripper2.z0 = 0.000000
+h[7] = UpperCarriage_LiftBoom.zd0 = 0.000000
+h[8] = LiftBoom_TiltBoom.zd0 = 0.000000
+h[9] = TiltBoom_ArmEnd.zd0 = 0.000000
+h[10] = Arm_End_X_Link.zd0 = 0.000000
+h[11] = Tilt_Arm_X_Link.zd0 = 0.000000
+h[12] = GripperBase1_Gripper1.zd0 = 0.000000
+h[13] = GripperBase2_Gripper2.zd0 = 0.000000
+Number of differential equations 13 -------
+Tyres --------------------------------------
+Motors -------------------------------------
+h[14] =Motor_Cabin.w  = 0.000000
+h[15] =Motor_Cabin.wd = 0.000000
+h[16] =Motor_Cabin.Md = 0.000000
+Pressures ----------------------------------
+h[17] =Vol_Pump.p = 3000000.000000
+h[18] =Vol_Tank.p = 0.000000
+h[19] =Vol_LiftB_A.p = 3000000.000000
+h[20] =Vol_LiftB_B.p = 3000000.000000
+h[21] =Vol_TiltB_A.p = 3000000.000000
+h[22] =Vol_TiltB_B.p = 3000000.000000
+h[23] =Vol_TiltA_A.p = 3000000.000000
+h[24] =Vol_TiltA_B.p = 3000000.000000
+h[25] =Vol_Gripper_A.p = 3000000.000000
+h[26] =Vol_Gripper_B.p = 3000000.000000
+Hydraulic motors ---------------------------
+2/2 Valves ---------------------------------
+PVG32 Valves ----------------------
+L90LS Valves ----------------------
+D1VW Valves ----------------------
+Pressure Compensated Proportional Valves ---
+M4-15 Valves ----------------------
+M200LS Valves ----------------------
+Bosch Rexroth MHRB Valves ----------
+Bucher CINDY Valves ----------------
